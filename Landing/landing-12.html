@@ -1,0 +1,146 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/143f4c7aad.js" crossorigin="anonymous"></script>
+
+    <!-- swiper js libary -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- animate on scroll libary -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+</head>
+
+
+<body class="bg-gradient-to-r from-indigo-300 to-purple-400 text-white">
+    <header class=" sm:px-20 fixed   bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 w-12/12 inset-x-0 top-0 z-10  ">
+
+        <nav class="flex items-center justify-between p-4" aria-label="Global">
+
+            <div class="mx flex flex-row items-center sm:gap-5">
+                <i class="fas fa-pen-fancy fa-xs fa-fw  text-2xl "></i>
+                <h4 class="font-semi-bold text-2xl">Quilto</h4>
+            </div>
+            <ul class="hidden flex flex-row text-white   sm:flex gap-12">
+                  <li><a class="relative text-lg focus:text-black  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Features</a></li>
+                <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Pricing</a></li>
+                <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">About</a></li>
+            </ul>
+            <div class="nav-3 hidden sm:block">
+                           <ul class="flex flex-row gap-5">
+                            <i class="fa fa-search text-2xl cursor-pointer" aria-hidden="true"></i>
+                            <img src="img/hero-12.jpg" class="w-10 h-10 rounded-full mr-4" alt="">
+                            <i class="fa fa-dropbox text-2xl cursor-pointer" aria-hidden="true"></i>
+            </a>
+
+            </ul>
+            </div>
+            <!-- mobile section -->
+            <button
+                class="px-3 outline-none mobile-menu-button rounded-md p-2 border sm:hidden flex border-white hover:bg-none hover:text-white">
+                <i class="fa-solid fa-bars text-white"></i></button>
+        </nav>
+        <div class="hidden mobile-menu ">
+            <ul class="mx-auto pl-10 text-white flex flex-col gap-2">
+                  <li><a class="relative text-lg focus:text-black  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Features</a></li>
+                <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Pricing</a></li>
+                <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">About</a></li>
+            </ul>
+            <div class="nav-3 pl-8 p-4">
+                <ul class="flex flex-row gap-5">
+                <a class="flex-shrink-0 border-2 border-white hover:border-black rounded-sm px-4 p-2 cursor-pointer z-1 hover:bg-black bg-white text-black   hover:text-white "
+                type="a">
+                Login
+            </a>
+
+            </ul>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </header>
+    <!-- <header
+        class="navbar fixed z-10 top-0 inset-x-0 bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10  flex flex-row s z-1 justify-between items-center px-10 py-5 ">
+        <div class="nav-1 w-2/12 flex flex-row gap-4 items-center" data-aos="fade-top">
+           <i class="fas fa-pen-fancy fa-xs fa-fw  text-2xl "></i>
+            <h4 class="font-bold text-2xl">PlayLite</h4>
+        </div>
+        <div class="nav-2">
+            <ul class="flex flex-row gap-12">
+                <li><a class="relative text-lg focus:text-black  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Features</a></li>
+                <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Pricing</a></li>
+                <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">About</a></li>
+
+            </ul>
+        </div>
+        <div class="flex flex-row gap-4 items-center">
+            <i class="fa fa-search text-2xl cursor-pointer" aria-hidden="true"></i>
+            <img src="img/hero-12.jpg" class="w-10 h-10 rounded-full mr-4" alt="">
+            <i class="fa fa-dropbox text-2xl cursor-pointer" aria-hidden="true"></i>
+           
+        </div>
+    </header> -->
+            <main class="flex flex-col  pt-28 gap-10 items-center justify-center  mx-10">
+
+                <div class="hero-1 flex flex-col gap-10 sm:w-6/12 " data-aos="fade-top">
+                    <div class=" flex flex-row items-center justify-center gap-4">
+                        <img src="img/hero-12.jpg" class="w-10 h-10 rounded-full mr-4" alt="">
+                        <i class="fa fa-percent" aria-hidden="true"></i>
+                        <p class="font-bold ">+400%</p>
+                    </div>
+                    <h4 class="text-2xl sm:text-5xl font-bold text-center" data-aos="zoom-in-up">Control your website with your PlayLite account</h4>
+                    <div class="flex flex-col sm:flex-row gap-5 justify-center  items-center">
+                        <a class="flex-shrink-0 border-2 border-white hover:border-black rounded-full px-20 p-4 cursor-pointer z-1 hover:bg-black bg-white text-black   hover:text-white "
+                        type="a" data-aos="fade-left">
+                        Try Free Trial
+                    </a>
+                        <a class="flex-shrink-0 border-2 border-white hover:border-black rounded-full px-20 p-4 cursor-pointer z-1 hover:bg-black bg-white text-black   hover:text-white "
+                        type="a" data-aos="fade-right"> <i class="fa fa-youtube" aria-hidden="true"></i>
+                        Watch video
+                    </a>
+                    </div>
+
+                </div>
+                <div class=" pt-5" data-aos="zoom-in-up">
+                    <img src="img/hero-12-1.png" class="scale-125" alt="">
+                </div>
+            </main>
+
+
+
+
+</body>
+
+<script>
+    
+ // Grab HTML Elements
+ const btn = document.querySelector("button.mobile-menu-button");
+ const menu = document.querySelector(".mobile-menu");
+
+ // Add Event Listeners
+ btn.addEventListener("click", () => {
+     menu.classList.toggle("hidden");
+ });
+ //to start using the libary
+ AOS.init(
+    );
+</script>
+
+</html>

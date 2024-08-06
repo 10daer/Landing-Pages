@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/143f4c7aad.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gradient-to-br from-orange-800 via-purple-800 to-blue-400">
+    <header class=" sm:px-20 fixed rounded-md w-12/12 inset-x-0 top-0 z-10 border-b-2 bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10">
+
+        <nav class="flex items-center justify-between p-4" aria-label="Global">
+
+            <div class="mx flex flex-row items-center sm:gap-5">
+                <h4 class="text-white text-lg text-extra-bold font-mono">The Libary.</h4>
+            </div>
+            <ul class="hidden flex flex-row text-white   sm:flex gap-12">
+                <li><a class="relative  w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Home</a></li>
+            <li><a class="relative  w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Collection</a></li>
+            <li><a class="relative  w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Category</a></li>
+            <li><a class="relative  w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Pricing</a></li>
+            </ul>
+            <div class="nav-3 hidden sm:block">
+                           <ul class="flex flex-row gap-5">
+                <li><a class="cursor-pointer p-3 hover:border-2 hover:border-white text-white hover:text-white  hover:rounded-lg " href="">Login</a></li>
+            </ul>
+            </div>
+            <!-- mobile section -->
+            <button
+                class="px-3 outline-none mobile-menu-button rounded-md p-2 border sm:hidden flex border-white hover:bg-none hover:text-white">
+                <i class="fa-solid fa-bars text-white"></i></button>
+        </nav>
+        <div class="hidden mobile-menu bg-gradient-to-br from-orange-800 via-purple-800 to-blue-400">
+            <ul class="mx-auto pl-10 text-white flex flex-col gap-2">
+                <li><a class="relative  w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Home</a></li>
+            <li><a class="relative  w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Collection</a></li>
+            <li><a class="relative  w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Category</a></li>
+            <li><a class="relative  w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Pricing</a></li>
+            </ul>
+            <div class="nav-3 pl-8 p-4">
+                <ul class="flex flex-row gap-5">
+                <li><a class="cursor-pointer p-3 hover:border-2 hover:border-white text-white hover:text-white  hover:rounded-lg " href="">Login</a></li>
+            </ul>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </header>
+    <main>
+       
+<div class="flex flex-col sm:flex-row pt-20 w-11/12 row ">
+    <div class="flex flex-col sm:hidden w-10/12 mx-10 mt-20 gap-5">
+        <div class="">
+            <h4 class="text-6xl font-bold text-white">Get your Books with ease</h4>
+            <h4 class="text-4xl font-semi-bold text-yellow-400">From us!!</h4>
+        </div>
+        <p class="text-1xl text-white">Lorem ipsum dolor sit amet consectetur. 
+        Vitae enim nulla sagittis quis accumsan sapien velit est. Vitae auctor mauris sed urna dui.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, veniam in aut eius 
+        quaerat nostrum aspernatur minus. Aspernatur, voluptatum voluptas explicabo natus reiciendis excepturi? 
+        Quibusdam deserunt aut aperiam. Fugiat, architecto!</p>
+        <a href="" class="border-white text-white text-center cursor-pointer p-3 hover:bg-white hover:text-black border-white border-2 rounded-lg"> <i class="fa fa-book" aria-hidden="true"></i> Get a Book</a>
+    </div>
+    <div class="grid grid-cols-2 gap-2  overflow-hidden">
+        <img src="img/book2.png" class="col-span-2" alt="">
+        <img src="img/book1.png" class="col-span" alt="">
+        <img src="img/book3.png" class="col-span" alt="">
+        <img src="img/book4.png" class="col-span" alt="">
+        <img src="img/book4.png" class="col-span" alt="">
+    </div>
+    
+    <div class="flex flex-col w-10/12 hidden sm:flex mt-20 gap-5">
+        <div class="">
+            <h4 class="text-7xl font-semi-bold text-white">Get your Books with ease</h4>
+            <h4 class="text-8xl font-bold text-yellow-400">From us!!</h4>
+        </div>
+        <p class="text-1xl text-white">Lorem ipsum dolor sit amet consectetur. 
+        Vitae enim nulla sagittis quis accumsan sapien velit est. Vitae auctor mauris sed urna dui.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, veniam in aut eius 
+        quaerat nostrum aspernatur minus. Aspernatur, voluptatum voluptas explicabo natus reiciendis excepturi? 
+        Quibusdam deserunt aut aperiam. Fugiat, architecto!</p>
+        <a href="" class="border-white text-white text-center cursor-pointer p-3 hover:bg-white hover:text-black w-3/12 border-white border-2 rounded-lg"> <i class="fa fa-book" aria-hidden="true"></i> Get a Book</a>
+    </div>
+</div>
+       
+    </main> 
+</body>
+<script>
+   
+    // Grab HTML Elements
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    // Add Event Listeners
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+ //to start using the libary
+ AOS.init(
+    );
+</script>
+</html>

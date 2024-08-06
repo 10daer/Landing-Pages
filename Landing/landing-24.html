@@ -1,0 +1,691 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/143f4c7aad.js" crossorigin="anonymous"></script>
+
+    <!-- animate on scroll libary -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+    <!-- font used in this page imported from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class', /* class/media, here we use class to enable manually dark mode */
+        }
+    </script>
+    <script>
+        /**
+         * Loads the theme stored
+        */
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+</head>
+
+
+<body class="dark:text-white dark:bg-neutral-900">
+    <header
+        class=" md:px-20 fixed   bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 w-12/12 inset-x-0 top-0 z-30  ">
+
+        <nav class="flex items-center justify-between p-4" aria-label="Global">
+
+            <div class="mx flex flex-row items-center md:gap-5">
+                <!-- <img src="img/logo-22.svg" alt=""> -->
+                <img src="img/logo-24.svg" alt="">
+            </div>
+            <ul class="hidden flex flex-row md:flex gap-12">
+                <li><a class="relative text-lg focus:text-white  w-fit block hover:text-black dark:hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-black dark:after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">PRODUCTS</a></li>
+                <li><a class="relative text-lg  w-fit block hover:text-black dark:hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-black dark:after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">GALLERY </a></li>
+                <li><a class="relative text-lg  w-fit block hover:text-black dark:hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-black dark:after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">CONTACT</a></li>
+
+
+            </ul>
+
+            <ul class="flex flex-row items-center gap-10">
+                <li
+                    class="nav-3 hidden md:block flex flex-row gap-5 relative text-lg  w-fit block hover:text-black dark:hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-black dark:after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
+                    <a class="cursor-pointer  items-center flex flex-row gap-2 " type="a">
+                        Get Started Today
+
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <button id="theme-toggle" type="button"
+                        class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                fill-rule="evenodd" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </li>
+
+            </ul>
+
+            <!-- mobile section -->
+            <button
+                class="px-3 outline-none mobile-menu-button text-teal-900 rounded-md p-2 border md:hidden flex border-teal-100 hover:bg-none hover:text-teal-900">
+                <i class="fa-solid fa-bars"></i></button>
+        </nav>
+        <div class="hidden mobile-menu ">
+            <ul class="mx-auto pl-10  flex flex-col gap-2">
+
+                <li><a class="relative text-lg focus:text-white  w-fit block hover:text-black dark:hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-black dark:after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">PRODUCTS</a></li>
+                <li><a class="relative text-lg  w-fit focus:text-white  block hover:text-black dark:hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-black dark:after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">GALLERY</a></li>
+                <li><a class="relative text-lg  w-fit focus:text-white  block hover:text-black dark:hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-black dark:after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">CONTACT</a></li>
+            </ul>
+            <div class="nav-3 pl-8 p-4">
+                <ul class="flex flex-row gap-5">
+                    <a class="" type="a">
+                        Get CRONOS
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+
+                </ul>
+
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </header>
+    <main class=" pt-24 mx-5 md:mx-10 sm:pt-36 gap-10 items-center ">
+        <section class="flex flex-col justify-between md:flex-row gap-10 py-10  md:py-20 ">
+            <div class="flex flex-col space-between gap-10">
+                <div>
+                    <h4 class="text-6xl md:text-8xl font-light">Let's ride </h4>
+                    <h4 class="text-5xl md:text-8xl font-bold">THE FUTURE.</h4>
+                </div>
+
+
+                <p>Simple and sleek design with users in mind.</p>
+                <div class="flex flex-col gap-10">
+                    <div class="flex justify-between gap-5 flex-col">
+                        <button
+                            class="cursor-pointer  items-center justify-center flex flex-row gap-2 py-5 px-10 md:w-8/12 border-2 border-black hover:bg-black hover:text-white  dark:text-black dark:border-2  dark:bg-white dark:hover:border-2 dark:hover:bg-neutral-900 dark:border-white dark:hover:text-white ">
+                            <h4>Buy it Now</h4>
+                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        </button>
+                        <button
+                            class="cursor-pointer  items-center justify-center flex flex-row gap-2 py-5 px-10 md:w-8/12 border-2 border-black hover:bg-black hover:text-white  dark:text-black dark:border-2  dark:bg-white dark:hover:border-2 dark:hover:bg-neutral-900 dark:border-white dark:hover:text-white ">
+                            <h4>Watch our video how it works</h4>
+                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            <img src="img/hero-24-1.svg" alt="" class="hover:text-blue-500 w-1/12 cursor-pointer">
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <img src="img/bg-24.svg" class="md:w-6/12 scale-100" alt="">
+        </section>
+
+        <section class="grid grid-cols-3 gap-5 md:gap-10 md:grid-cols-6 grid-rows-2 md:grid-rows-1 py-10  md:py-20 ">
+            <div class="flex flex-col shadow-lg gap-2 p-4 dark:bg-neutral-800 hover: items-center">
+                <div class="flex flex-row gap-2 items-end">
+                    <h4 class="text-2xl md:text-4xl font-bold">105</h4>
+                    <p>lbs</p>
+                </div>
+                <p class="text-sm">Net Weight</p>
+            </div>
+            <div class="flex flex-col shadow-lg gap-2 p-4 dark:bg-neutral-800 hover: items-center">
+                <div class="flex flex-row gap-2 items-end">
+                    <h4 class="text-2xl md:text-4xl font-bold">105</h4>
+                    <p>lbs</p>
+                </div>
+                <p class="text-sm">Net Weight</p>
+            </div>
+            <div class="flex flex-col shadow-lg gap-2 p-4 dark:bg-neutral-800 hover: items-center">
+                <div class="flex flex-row gap-2 items-end">
+                    <h4 class="text-2xl md:text-4xl font-bold">105</h4>
+                    <p>lbs</p>
+                </div>
+                <p class="text-sm">Net Weight</p>
+            </div>
+            <div class="flex flex-col shadow-lg gap-2 p-4 dark:bg-neutral-800 hover: items-center">
+                <div class="flex flex-row gap-2 items-end">
+                    <h4 class="text-2xl md:text-4xl font-bold">105</h4>
+                    <p>lbs</p>
+                </div>
+                <p class="text-sm">Net Weight</p>
+            </div>
+            <div class="flex flex-col shadow-lg gap-2 p-4 dark:bg-neutral-800 hover: items-center">
+                <div class="flex flex-row gap-2 items-end">
+                    <h4 class="text-2xl md:text-4xl font-bold">105</h4>
+                    <p>lbs</p>
+                </div>
+                <p class="text-sm">Net Weight</p>
+            </div>
+
+            <div class="flex flex-col shadow-lg gap-2 p-4 dark:bg-neutral-800 hover: items-center">
+                <div class="flex flex-row gap-2 items-end">
+                    <h4 class="text-2xl md:text-4xl font-bold">105</h4>
+                    <p>lbs</p>
+                </div>
+                <p class="text-sm">Net Weight</p>
+            </div>
+
+        </section>
+
+        <section class="py-5  md:py-10  flex items-center flex-col">
+            <div class="flex text-center gap-5 flex-col">
+                <h4 class="text-2xl md:text-4xl font-bold">Product Information</h4>
+                <p>Our Scooter has following unique design and technology features:</p>
+            </div>
+            <div class="flex flex-col gap-40 items-center justify-between md:flex-row">
+                <img src="img/hero-24-2.svg" alt="">
+                <div class="flex gap-5 flex-col">
+                    <div class="flex items-center flex-row gap-2">
+                        <img src="img/checkmark-2.svg" alt="">
+                        <p class="text-md">Lightweight aircraft grade aluminium frame</p>
+                    </div>
+                    <div class="flex items-center flex-row gap-2">
+                        <img src="img/checkmark-2.svg" alt="">
+                        <p class="text-md">Car grade lithium battery</p>
+                    </div>
+                    <div class="flex items-center flex-row gap-2">
+                        <img src="img/checkmark-2.svg" alt="">
+                        <p class="text-md">Self-balanced</p>
+                    </div>
+                    <div class="flex items-center flex-row gap-2">
+                        <img src="img/checkmark-2.svg" alt="">
+                        <p class="text-md">Plug n play</p>
+                    </div>
+                    <div class="flex items-center flex-row gap-2">
+                        <img src="img/checkmark-2.svg" alt="">
+                        <p class="text-md">Quick release adapter</p>
+                    </div>
+                    <div class="flex items-center flex-row gap-2">
+                        <img src="img/checkmark-2.svg" alt="">
+                        <p class="text-md">RFID key card</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5  md:py-10  flex items-center flex-col">
+            <div class="flex text-center gap-5 flex-col">
+                <h4 class="text-2xl md:text-4xl font-bold">High Efficiency Motor</h4>
+                <p>More torque for powerful riding with 22% maximum hill climbing capability.</p>
+            </div>
+            <div class="flex flex-col gap-40 items-center justify-center md:flex-row">
+                <img src="img/hero-24-3.svg" class="w-8/12" alt="">
+
+            </div>
+        </section>
+        <section class="py-5  md:py-10  flex items-center flex-col">
+            <div class="flex text-center gap-5 flex-col">
+                <h4 class="text-2xl md:text-4xl font-bold">Multiple Accessories</h4>
+                <p>There are multiple modes for the scooter for your multiple needs.</p>
+            </div>
+            <div class="flex flex-col gap-40 items-center justify-between md:flex-row">
+                <div class="flex gap-5 flex-col">
+                    <h4 class="text-2xl md:text-4xl font-bold">Golf Bag Rock</h4>
+                    <div class="flex items-center flex-row gap-2">
+                        <img src="img/checkmark-2.svg" alt="">
+                        <p class="text-md">Material : Aluminium alloy</p>
+                    </div>
+                    <div class="flex items-center flex-row gap-2">
+                        <img src="img/checkmark-2.svg" alt="">
+                        <p class="text-md">Color : Black</p>
+                    </div>
+                    <div class="flex items-center flex-row gap-2">
+                        <img src="img/checkmark-2.svg" alt="">
+                        <p class="text-md">Capacity : 45lbs</p>
+                    </div>
+                    <div class="flex items-center flex-row gap-2">
+                        <img src="img/checkmark-2.svg" alt="">
+                        <p class="text-md">Ease : Steady & adjustable</p>
+                    </div>
+                </div>
+                <img src="img/hero-24-4.svg" alt="">
+
+            </div>
+        </section>
+        <section class="py-5  md:py-10  flex items-center flex-col">
+            <div class="flex flex-col gap-40 items-center justify-between md:flex-row">
+                <img src="img/hero-24-5.svg" alt="">
+                <div class="flex gap-5 flex-col">
+                    <h4 class="text-2xl md:text-4xl font-bold">Shopping Rack</h4>
+                    <div class="flex items-center flex-row gap-2">
+                        <img src="img/checkmark-2.svg" alt="">
+                        <p class="text-md">Material : Aluminium alloy</p>
+                    </div>
+                    <div class="flex items-center flex-row gap-2">
+                        <img src="img/checkmark-2.svg" alt="">
+                        <p class="text-md">Color : Black</p>
+                    </div>
+                    <div class="flex items-center flex-row gap-2">
+                        <img src="img/checkmark-2.svg" alt="">
+                        <p class="text-md">Capacity : 45lbs</p>
+                    </div>
+                    <div class="flex items-center flex-row gap-2">
+                        <img src="img/checkmark-2.svg" alt="">
+                        <p class="text-md">Ease : Steady & adjustable</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="cursor-pointer text-center mx-auto text-2xl items-center justify-center flex flex-row gap-2 py-5 px-10 md:w-6/12 border-2 border-black    dark:border-2  dark:hover:border-2 dark:hover:bg-neutral-900 dark:border-white dark:text-white ">
+            <h4>More Accessories Coming Soon</h4>
+        </section>
+
+        <section class="py-5  md:py-10  flex items-center flex-col">
+            <div class="flex text-center gap-5 flex-col">
+                <h4 class="text-2xl md:text-4xl font-bold">High Efficiency Motor</h4>
+                <p>More torque for powerful riding with 22% maximum hill climbing capability.</p>
+            </div>
+            <div class="grid md:grid-cols-2 md:grid-rows-2 gap-20 py-5 md:py-10 items-center ">
+                <div class="shadow-lg dark:bg-neutral-800 p-10 flex justify-center ">
+                    <h4 class="font-bold relative z-10 top-0">Scooter</h4>
+                    <img src="img/hero-24-6.svg" class="w-8/12" alt="">
+
+                </div>
+                <div class="shadow-lg dark:bg-neutral-800 p-10 flex justify-center ">
+                    <h4 class="font-bold relative z-10 top-0">Built Quality</h4>
+                    <img src="img/hero-24-7.svg" class="w-8/12 scale-125" alt="">
+
+                </div>
+
+                <div class="flex justify-between gap-5 flex-col">
+                    <button
+                        class="cursor-pointer  items-center justify-center flex flex-row gap-2 py-5 px-10 md:w-8/12 border-2 border-black hover:bg-black hover:text-white  dark:text-black dark:border-2  dark:bg-white dark:hover:border-2 dark:hover:bg-neutral-900 dark:border-white dark:hover:text-white ">
+                        <h4>Battery Images</h4>
+                    </button>
+                    <button
+                        class="cursor-pointer  items-center justify-center flex flex-row gap-2 py-5 px-10 md:w-8/12 border-2 border-black hover:bg-black hover:text-white  dark:text-black dark:border-2  dark:bg-white dark:hover:border-2 dark:hover:bg-neutral-900 dark:border-white dark:hover:text-white ">
+                        <h4>Spare Parts Images</h4>
+                    </button>
+                    <button
+                        class="cursor-pointer  items-center justify-center flex flex-row gap-2 py-5 px-10 md:w-8/12 border-2 border-black hover:bg-black hover:text-white  dark:text-black dark:border-2  dark:bg-white dark:hover:border-2 dark:hover:bg-neutral-900 dark:border-white dark:hover:text-white ">
+                        <h4>Charging Cable Images</h4>
+                    </button>
+
+
+                </div>
+
+                <div class="shadow-lg dark:bg-neutral-800 p-10 flex justify-center ">
+                    <h4 class="font-bold relative z-10 top-0">Parts</h4>
+                    <img src="img/hero-24-8.svg" class="w-8/12 scale-125" alt="">
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="py-5 relative md:py-10 gap-10  flex items-center flex-col">
+            <div class="flex text-center gap-5 flex-col">
+                <h4 class="text-2xl md:text-4xl font-bold">High Efficiency Motor</h4>
+                <p>More torque for powerful riding with 22% maximum hill climbing capability.</p>
+            </div>
+            <div  class="relative md:my-80 bg-gradient-to-l from-zinc-400 via-zinc-300 to-zinc-100 dark:bg-neutral-800">
+                <img src="img/bg-24-1.svg" alt="">
+            </div>
+            <div class="grid md:absolute bottom-0 grid-cols-2 gap-5 md:gap-10 md:grid-cols-4 grid-rows-2 md:grid-rows-1 py-10  md:py-20 ">
+                <div class="relative   bg-sky-400  rounded-lg md:block">
+                    <div class="relative flex flex-col">
+            
+                        <img src="img/hero-24-9.svg" class="scale-125 " alt="">
+            
+            
+                        <div class="flex gap-4">
+                            <div class="flex flex-col absolute bottom-0 right-0 items-center justify-between gap-10 p-5  text-white   aos-init aos-animate"
+                                data-aos="zoom-in-up">
+                                <h4 class="text-6xl font-bold opacity-50">01</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative   bg-green-400  rounded-lg md:block">
+                    <div class="relative flex flex-col">
+            
+                        <img src="img/hero-24-10.svg" class="scale-125 " alt="">
+            
+            
+                        <div class="flex gap-4">
+                            <div class="flex flex-col absolute bottom-0 right-0 items-center justify-between gap-10 p-5  text-white   aos-init aos-animate"
+                                data-aos="zoom-in-up">
+                                <h4 class="text-6xl font-bold opacity-50">02</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative   bg-red-700 rounded-lg md:block">
+                    <div class="relative flex flex-col">
+            
+                        <img src="img/hero-24-11.svg" class="scale-125 " alt="">
+            
+            
+                        <div class="flex gap-4">
+                            <div class="flex flex-col absolute bottom-0 right-0 items-center justify-between gap-10 p-5  text-white   aos-init aos-animate"
+                                data-aos="zoom-in-up">
+                                <h4 class="text-6xl font-bold opacity-50">03</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative   bg-zinc-800  rounded-lg md:block">
+                    <div class="relative flex flex-col">
+            
+                        <img src="img/hero-24-9.svg" class="scale-125 " alt="">
+            
+            
+                        <div class="flex gap-4">
+                            <div class="flex flex-col absolute bottom-0 right-0 items-center justify-between gap-10 p-5  text-white   aos-init aos-animate"
+                                data-aos="zoom-in-up">
+                                <h4 class="text-6xl font-bold opacity-50">04</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="">
+            <div class="container p-5 sm:p-10">
+                <div class="grid items-center gap-4 xl:grid-cols-5">
+                    <div class="max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left">
+                        <h2 class="text-4xl font-bold">Customer Reviews</h2>
+                        <p class="">We highly value customer feedback, which serves as a guide for our
+                            commitment to excellence.Thank you for being a vital part of our
+                            journey and entrusting us to enhance your experience. Your reviews are the heartbeat of our
+                            dedication to exceptional customer service.
+                        </p>
+                    </div>
+                    <div class="p-6 xl:col-span-3">
+                        <div class="grid gap-4 md:grid-cols-2">
+                            <div class="grid content-center gap-4">
+                                <div class="p-2 sm:p-6 rounded  hover:shadow-lg dark:bg-neutral-800 cursor-pointer">
+                                    <p>An audire commodo habemus cum. Ne sed corrumpit repudiandae. Tota aliquip
+                                        democritum pro in, nec democritum intellegam ne. Propriae volutpat dissentiet ea
+                                        sit, nec at lorem inani tritani, an ius populo perfecto vituperatoribus. Eu cum
+                                        case modus salutandi, ut eum vocent sensibus reprehendunt.</p>
+                                    <div class="flex items-center mt-4 space-x-4">
+                                        <img src="https://source.unsplash.com/50x50/?portrait?1" alt="" class="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500">
+                                        <div>
+                                            <p class="text-lg font-semibold">Foster Kean</p>
+                                            <p class="text-sm ">Customer.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-2 sm:p-6 rounded  hover:shadow-lg dark:bg-neutral-800 cursor-pointer">
+                                    <p>Sit wisi sapientem ut, pri civibus temporibus voluptatibus et, ius cu hinc
+                                        fabulas. Nam meliore minimum et, regione convenire cum id. Ex pro eros mucius
+                                        consectetuer, pro magna nulla nonumy ne, eam putent iudicabit consulatu cu.</p>
+                                    <div class="flex items-center mt-4 space-x-4">
+                                        <img src="https://source.unsplash.com/50x50/?portrait?2" alt="" class="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500">
+                                        <div>
+                                            <p class="text-lg font-semibold">Darren Dunlap</p>
+                                            <p class="text-sm ">Customer.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid content-center gap-4">
+                                <div class="p-2 sm:p-6 rounded  hover:shadow-lg dark:bg-neutral-800 cursor-pointer">
+                                    <p>Putant omnium elaboraret per ut. Id dicta tritani nominavi quo, mea id justo
+                                        errem elaboraret. Agam mollis scripserit ea his, ut nec postea verear persecuti.
+                                        Ea noster senserit eam, ferri omittantur ei nec. Id mel solet libris
+                                        efficiantur, commune explicari et eos. Case movet ad est, sed tota vocent
+                                        appetere ea.</p>
+                                    <div class="flex items-center mt-4 space-x-4">
+                                        <img src="https://source.unsplash.com/50x50/?portrait?3" alt="" class="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500">
+                                        <div>
+                                            <p class="text-lg font-semibold">Leroy Jenkins</p>
+                                            <p class="text-sm ">Customer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-2 sm:p-6 rounded  hover:shadow-lg dark:bg-neutral-800 cursor-pointer">
+                                    <p>Te omnes virtute volutpat sed. Ei esse eros interesset vel, ei populo denique
+                                        ocurreret vix, eu cum pertinax mandamus vituperatoribus. Solum nihil luptatum
+                                        per ex, ei amet viderer eos. Ea illum labitur mnesarchum pro. Eius meis
+                                        salutandi ei nam, alterum expetenda et nec. Expetenda intellegat at eum, per
+                                        mazim sanctus honestatis ad. Ei noluisse invenire vix. Te ancillae patrioque
+                                        qui, probo bonorum vivendum ex vim.</p>
+                                    <div class="flex items-center mt-4 space-x-4">
+                                        <img src="https://source.unsplash.com/50x50/?portrait?4" alt="" class="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500">
+                                        <div>
+                                            <p class="text-lg font-semibold">Tosin akintola</p>
+                                            <p class="text-sm ">Customer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5  md:py-10  flex items-center gap-5 flex-col">
+            <div class="flex text-center gap-5 flex-col">
+                <h4 class="text-2xl md:text-4xl font-bold">Subscribe To Newsletter</h4>
+                <p>Subscribe to our newsletter to get amazing offers in future.</p>
+            </div>
+
+            <div class="flex flex-col gap-5 w-full md:w-6/12 md:flex-row">
+                <input type="email" name="" id="" placeholder="Enter your email." class="md:w-8/12 px-4 py-4 bg-neutral-100 w-full  text-black">
+                <button
+                class="cursor-pointer  items-center justify-center flex flex-row gap-2 py-4 md:w-4/12 px-4  border-2 border-black hover:bg-black hover:text-white  dark:text-black dark:border-2  dark:bg-white dark:hover:border-2 dark:hover:bg-neutral-900 dark:border-white dark:hover:text-white ">
+                <p>Get start</p>
+            </button>
+            </div>
+            </section>
+    </main>
+
+
+
+    <footer class="px-5 md:px-10 py-10 dark:bg-neutral-800 flex flex-col gap-20 sm:p-10">
+        <div class="flex flex-col sm:flex-row items-center gap-5 md:gap-20 justify-between">
+            <div class="flex flex-col gap-20 sm:w-10/12 justify-between">
+                <div class="flex flex-col items-center md:items-start gap-10 justify-between">
+                    <div class=" flex flex-row gap-5 items-center sm:w-4/12 sm:gap-5">
+                        <img src="img/logo-24.svg" alt="">
+                        
+                    </div>
+                    <p class="sm:w-4/12">The best scotter for anyone, optimized for better battery and longer hours to have fun with the family </p>
+                </div>
+                <div>
+                    <ul class="flex-col gap-2 flex sm:flex-row  items-center sm:flex sm:gap-12">
+                        <li><a class="relative text-lg focus:text-black  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                                href="">PRODUCTS</a></li>
+                        <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                                href="">GALLERY</a></li>
+                        <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                                href="">CONTACT</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <div class="flex mt-3 w-48 h-14 bg-black text-white rounded-xl items-center justify-center">
+                    <div class="mr-3">
+                        <svg viewBox="0 0 384 512" width="30">
+                            <path fill="currentColor"
+                                d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="text-xs">Download on the</div>
+                        <div class="text-2xl font-semibold font-sans -mt-1">App Store</div>
+                    </div>
+                </div>
+                <div class="flex mt-3 w-48 h-14 bg-black text-white rounded-lg items-center justify-center">
+                    <div class="mr-3">
+                        <svg viewBox="30 336.7 120.9 129.2" width="30">
+                            <path fill="#FFD400"
+                                d="M119.2,421.2c15.3-8.4,27-14.8,28-15.3c3.2-1.7,6.5-6.2,0-9.7  c-2.1-1.1-13.4-7.3-28-15.3l-20.1,20.2L119.2,421.2z">
+                            </path>
+                            <path fill="#FF3333"
+                                d="M99.1,401.1l-64.2,64.7c1.5,0.2,3.2-0.2,5.2-1.3  c4.2-2.3,48.8-26.7,79.1-43.3L99.1,401.1L99.1,401.1z">
+                            </path>
+                            <path fill="#48FF48"
+                                d="M99.1,401.1l20.1-20.2c0,0-74.6-40.7-79.1-43.1  c-1.7-1-3.6-1.3-5.3-1L99.1,401.1z">
+                            </path>
+                            <path fill="#3BCCFF"
+                                d="M99.1,401.1l-64.3-64.3c-2.6,0.6-4.8,2.9-4.8,7.6  c0,7.5,0,107.5,0,113.8c0,4.3,1.7,7.4,4.9,7.7L99.1,401.1z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="text-xs">GET IT ON</div>
+                        <div class="text-xl font-semibold font-sans -mt-1">Google Play</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-col sm:flex-row flex  justify-between">
+            <div>
+                <svg class="svg-inline--fa fa-copyright" aria-hidden="true" focusable="false" data-prefix="far"
+                    data-icon="copyright" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                    data-fa-i2svg="">
+                    <path fill="currentColor"
+                        d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c-31.2-31.2-31.2-81.9 0-113.1s81.9-31.2 113.1 0c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9c-50-50-131-50-181 0s-50 131 0 181s131 50 181 0c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0c-31.2 31.2-81.9 31.2-113.1 0z">
+                    </path>
+                </svg><!-- <i class="fa fa-copyright" aria-hidden="true"></i> Font Awesome fontawesome.com --> 2024 <a
+                    href="" class="text-green-400">Tope
+                    akintola</a>. All rights reserved.
+            </div>
+            <div>
+                <ul class="hidden flex flex-row  items-center sm:flex gap-12">
+                    <li><a class="relative text-lg focus:text-black  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                            href=""><svg class="svg-inline--fa fa-facebook-f" aria-hidden="true" focusable="false"
+                                data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 320 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z">
+                                </path>
+                            </svg><!-- <i class="fa fa-facebook" aria-hidden="true"></i> Font Awesome fontawesome.com --></a>
+                    </li>
+                    <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                            href=""><svg class="svg-inline--fa fa-twitter" aria-hidden="true" focusable="false"
+                                data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                </path>
+                            </svg><!-- <i class="fa fa-twitter" aria-hidden="true"></i> Font Awesome fontawesome.com --></a>
+                    </li>
+                    <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                            href=""><svg class="svg-inline--fa fa-instagram" aria-hidden="true" focusable="false"
+                                data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                </path>
+                            </svg><!-- <i class="fa fa-instagram" aria-hidden="true"></i> Font Awesome fontawesome.com --></a>
+                    </li>
+                    <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                            href=""><svg class="svg-inline--fa fa-github" aria-hidden="true" focusable="false"
+                                data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 496 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                </path>
+                            </svg><!-- <i class="fa fa-github" aria-hidden="true"></i> Font Awesome fontawesome.com --></a>
+                    </li>
+                    <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                            href=""><svg class="svg-inline--fa fa-linkedin-in" aria-hidden="true" focusable="false"
+                                data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                                </path>
+                            </svg><!-- <i class="fa fa-linkedin" aria-hidden="true"></i> Font Awesome fontawesome.com --></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+<script>
+
+    // Grab HTML Elements
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    // Add Event Listeners
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+
+    //to start using the libary
+    AOS.init(
+    );
+
+    var themeToggleDarkIcon = document.getElementById("theme-toggle-dark-icon");
+    var themeToggleLightIcon = document.getElementById("theme-toggle-light-icon");
+
+    // Change the icons inside the button based on previous settings
+    if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+        themeToggleLightIcon.classList.remove("hidden");
+    } else {
+        themeToggleDarkIcon.classList.remove("hidden");
+    }
+
+    var themeToggleBtn = document.getElementById("theme-toggle");
+
+    themeToggleBtn.addEventListener("click", function () {
+        // toggle icons inside button
+        themeToggleDarkIcon.classList.toggle("hidden");
+        themeToggleLightIcon.classList.toggle("hidden");
+
+        // if set via local storage previously
+        if (localStorage.getItem("color-theme")) {
+            if (localStorage.getItem("color-theme") === "light") {
+                document.documentElement.classList.add("dark");
+                localStorage.setItem("color-theme", "dark");
+            } else {
+                document.documentElement.classList.remove("dark");
+                localStorage.setItem("color-theme", "light");
+            }
+
+            // if NOT set via local storage previously
+        } else {
+            if (document.documentElement.classList.contains("dark")) {
+                document.documentElement.classList.remove("dark");
+                localStorage.setItem("color-theme", "light");
+            } else {
+                document.documentElement.classList.add("dark");
+                localStorage.setItem("color-theme", "dark");
+            }
+        }
+    });
+</script>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Pages</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        margin: 10px 0;
+      }
+      a {
+        text-decoration: none;
+        color: #007bff;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Landing Pages</h1>
+    <ul>
+      <!-- Landing pages links will be inserted here by JavaScript -->
+    </ul>
+    <script>
+      const landingPagesContainer = document.querySelector("ul");
+      const totalLandingPages = 25; // Total number of landing pages
+
+      for (let i = 0; i < totalLandingPages; i++) {
+        const listItem = document.createElement("li");
+        const link = document.createElement("a");
+        link.href = `Landing/landing-${i}.html`;
+        link.textContent = `Landing Page ${i}`;
+        listItem.appendChild(link);
+        landingPagesContainer.appendChild(listItem);
+      }
+    </script>
+  </body>
+</html>

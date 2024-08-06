@@ -1,0 +1,375 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/143f4c7aad.js" crossorigin="anonymous"></script>
+
+    <!-- swiper js libary -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- animate on scroll libary -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body class=" text-white" style="background-image: url('img/bg-16.svg');">
+    <header
+        class=" sm:px-20 fixed   bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 w-12/12 inset-x-0 top-0 z-10 ">
+
+        <nav class="flex items-center justify-between p-4" aria-label="Global">
+
+            <div class="mx flex flex-row w-2/12  items-center sm:gap-5">
+                <img src="img/logo-16.svg" class="w-4/12 sm:w-6/12" alt="">
+            </div>
+            <ul class="hidden flex flex-row  items-center sm:flex gap-12">
+                <li><a class="relative text-lg focus:text-white  w-fit block hover:text-orange-600 after:block after:content-[''] after:absolute after:h-[2px] after:bg-orange-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">MEN</a></li>
+                <li><a class="relative text-lg  w-fit block hover:text-orange-600 after:block after:content-[''] after:absolute after:h-[2px] after:bg-orange-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">WOMEN</a></li>
+                <li><a class="relative text-lg  w-fit block hover:text-orange-600 after:block after:content-[''] after:absolute after:h-[2px] after:bg-orange-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">KIDS</a></li>
+                <li><a class="relative text-lg  w-fit block hover:text-orange-600 after:block after:content-[''] after:absolute after:h-[2px] after:bg-orange-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">COLLECTION</a></li>
+
+
+            </ul>
+            <div class="nav-3 hidden sm:block">
+                <ul class="flex flex-row gap-5">
+                    <a class="border-2 rounded-md p-2 hover:border-orange-600 cursor-pointer hover:bg-orange-600 hover:text-white hover:bg-black bg-none text-white "
+                        href="">Buy Now</a>
+                </ul>
+            </div>
+            <!-- mobile section -->
+            <button
+                class="px-3 outline-none mobile-menu-button cursor-pointer rounded-md p-2 border sm:hidden flex border-black  hover:bg-none hover:text-black">
+                <i class="fa-solid fa-bars"></i></button>
+        </nav>
+        <div class="hidden mobile-menu">
+            <ul class="mx-auto gap-20">
+                <li class=" py-3 px-5   transition duration-300"><a href="index.html">Home</a></li>
+                <li class=" py-3 px-5   transition duration-300"><a href="about.html">About</a></li>
+                <li class=" py-3 px-5   transition duration-300"><a href="">Services</a></li>
+                <li class=" py-3 px-5   transition duration-300"><a href="">product tour</a></li>
+                <li class=" py-3 px-5   transition duration-300"><a href="">blog</a></li>
+            </ul>
+        </div>
+        <div>
+
+        </div>
+    </header>
+
+    <main class="mx-10 pt-24  sm:pt-15 gap-10 items-center  ">
+        <section class="hero flex flex-col  sm:flex-row gap-20 items-center  sm:justify-between ">
+
+            <div class="hero-1 flex flex-col gap-2 mx-5 sm:w-6/12">
+                <img src="img/hero-16-1.svg" alt="" class="sm:w-2/12 ">
+                <h4 class="text-3xl sm:text-9xl text-orange-200 font-bold" data-aos="zoom-in-up"> BORING</h4>
+                <h4 class="text-3xl sm:text-8xl text-orange-200 font-light" data-aos="zoom-in-up">SHOES?</h4>
+
+
+                <div class="py-5 flex flex-col  gap-10">
+                    <p class="text-lg w-11/12">Step into a realm of unparalleled style and comfort at SoleStrides, where
+                        every shoe tells a story of confidence and adventure. Our hero is the Shoe Explorer, a fearless
+                        individual who navigates life's journeys with a firm stride and an unwavering sense of fashion.
+
+                    </p>
+                    <div class="flex flex-row gap-10">
+                        <a class="border-2 rounded-md p-2 border-orange-600 hover:border-orange-600 cursor-pointer bg-orange-600 hover:text-white hover:border-white hover:bg-transparent text-white "
+                            href="">Explore our store</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="hero-2 w-8/12 " data-aos="zoom-in-left" data-aos="fade-right">
+                <img src="img/hero-16-2.svg" alt="" class="sm:w-12/12 sm:scale-100">
+                <div class="flex flex-col text-white gap-2 fixed  p-4 rounded-r-lg w-5/12" style="top: 70%; right:10%;">
+                    <h4 class="font-bold text-1xl">Air Max 90 FlyEase</h4>
+                    <div class="flex gap-1 items-center ">
+                        <svg class="h-4 w-4 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                            <path
+                                d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                            </path>
+                        </svg>
+                        <svg class="h-4 w-4 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                            <path
+                                d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                            </path>
+                        </svg>
+                        <svg class="h-4 w-4 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                            <path
+                                d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                            </path>
+                        </svg>
+                        <svg class="h-4 w-4 shrink-0 fill-gray-300" viewBox="0 0 256 256">
+                            <path
+                                d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                            </path>
+                        </svg>
+                        <svg class="h-4 w-4 shrink-0 fill-gray-300" viewBox="0 0 256 256">
+                            <path
+                                d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                            </path>
+                        </svg>
+                        <div class="flex flex-row items-center">
+                            <div class="flex flex-col gap-2">
+                                <h4 class="font-bold text-orange-200 text-1xl">$200</h4>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <a class="border-2 rounded-md p-2 border-orange-600 hover:border-orange-600 cursor-pointer hover:bg-orange-600 hover:text-orange-600 hover:border-orange-600 text-center text-orange-600 hover:text-white "
+                href="">ADD TO CART </a>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="slider m-0">
+            <section id="thumbnail-carousel" class="pt-5 splide sm:pt-10 sm:px-20 "
+                aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel.">
+                <div class="splide__track">
+                    <ul class="splide__list gap-5" style="height: 40%;">
+                        <div class="splide__slide flex flex-row items-center shadow-lg rounded-l-lg"
+                            style="width: 50%; height:60%;">
+                            <div class="bg-pink-600 p-2 rounded-l-lg flex items-center w-5/12">
+                                <img src="img/hero-16-2.svg" alt="" class="scale-125">
+                            </div>
+
+                            <div class="flex flex-col bg-white text-black gap-2 p-4 rounded-r-lg w-5/12">
+                                <h4 class="font-bold text-1xl">Air Max 90 FlyEase</h4>
+                                <div class="flex gap-0.5">
+                                    <svg class="h-4 w-4 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                                        <path
+                                            d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                        </path>
+                                    </svg>
+                                    <svg class="h-4 w-4 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                                        <path
+                                            d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                        </path>
+                                    </svg>
+                                    <svg class="h-4 w-4 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                                        <path
+                                            d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                        </path>
+                                    </svg>
+                                    <svg class="h-4 w-4 shrink-0 fill-gray-300" viewBox="0 0 256 256">
+                                        <path
+                                            d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                        </path>
+                                    </svg>
+                                    <svg class="h-4 w-4 shrink-0 fill-gray-300" viewBox="0 0 256 256">
+                                        <path
+                                            d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="flex flex-row items-center">
+                                    <div class="flex flex-col gap-2">
+                                        <h4 class="font-bold text-1xl">$200</h4>
+                                        <p class="text-sm w-8/12 text-slate-600">Women’s Running shoe</p>
+                                    </div>
+                                    <i class="fa fa-heart text-3xl text-red-600" aria-hidden="true"></i>
+                                </div>
+                                <a class="border-2 rounded-md p-2 border-orange-600 hover:border-orange-600 cursor-pointer bg-orange-600 hover:text-orange-600 hover:border-orange-600 text-center hover:bg-transparent text-white "
+                            href="">ADD TO CART </a>
+
+                            </div>
+                        </div>
+                        <div class="splide__slide flex flex-row items-center shadow-lg rounded-l-lg"
+                            style="width: 50%; height:60%;">
+                            <div class="bg-green-600 p-2 rounded-l-lg flex items-center w-5/12">
+                                <img src="img/hero-16-3.svg" alt="" class="scale-125">
+                            </div>
+
+                            <div class="flex flex-col bg-white text-black gap-2 p-4 rounded-r-lg w-5/12">
+                                <h4 class="font-bold text-1xl">Air Max 90 FlyEase</h4>
+                                <div class="flex gap-0.5">
+                                    <svg class="h-4 w-4 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                                        <path
+                                            d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                        </path>
+                                    </svg>
+                                    <svg class="h-4 w-4 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                                        <path
+                                            d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                        </path>
+                                    </svg>
+                                    <svg class="h-4 w-4 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                                        <path
+                                            d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                        </path>
+                                    </svg>
+                                    <svg class="h-4 w-4 shrink-0 fill-gray-300" viewBox="0 0 256 256">
+                                        <path
+                                            d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                        </path>
+                                    </svg>
+                                    <svg class="h-4 w-4 shrink-0 fill-gray-300" viewBox="0 0 256 256">
+                                        <path
+                                            d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="flex flex-row items-center">
+                                    <div class="flex flex-col gap-2">
+                                        <h4 class="font-bold text-1xl">$200</h4>
+                                        <p class="text-sm w-8/12 text-slate-600">Women’s Running shoe</p>
+                                    </div>
+                                    <i class="fa fa-heart text-3xl text-red-600" aria-hidden="true"></i>
+                                </div>
+                                <a class="border-2 rounded-md p-2 border-orange-600 hover:border-orange-600 cursor-pointer bg-orange-600 hover:text-orange-600 hover:border-orange-600 text-center hover:bg-transparent text-white "
+                            href="">ADD TO CART </a>
+
+                            </div>
+                        </div>
+                        <div class="splide__slide flex flex-row items-center shadow-lg rounded-l-lg"
+                            style="width: 50%; height:60%;">
+                            <div class="bg-blue-600 p-2 rounded-l-lg flex items-center w-5/12">
+                                <img src="img/hero-16-4.svg" alt="" class="scale-125">
+                            </div>
+
+                            <div class="flex flex-col bg-white text-black gap-2 p-4 rounded-r-lg w-5/12">
+                                <h4 class="font-bold text-1xl">Air Max 90 FlyEase</h4>
+                                <div class="flex gap-0.5">
+                                    <svg class="h-4 w-4 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                                        <path
+                                            d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                        </path>
+                                    </svg>
+                                    <svg class="h-4 w-4 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                                        <path
+                                            d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                        </path>
+                                    </svg>
+                                    <svg class="h-4 w-4 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                                        <path
+                                            d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                        </path>
+                                    </svg>
+                                    <svg class="h-4 w-4 shrink-0 fill-gray-300" viewBox="0 0 256 256">
+                                        <path
+                                            d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                        </path>
+                                    </svg>
+                                    <svg class="h-4 w-4 shrink-0 fill-gray-300" viewBox="0 0 256 256">
+                                        <path
+                                            d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="flex flex-row items-center">
+                                    <div class="flex flex-col gap-2">
+                                        <h4 class="font-bold text-1xl">$200</h4>
+                                        <p class="text-sm w-8/12 text-slate-600">Women’s Running shoe</p>
+                                    </div>
+                                    <i class="fa fa-heart text-3xl text-red-600" aria-hidden="true"></i>
+                                </div>
+                                <a class="border-2 rounded-md p-2 border-orange-600 hover:border-orange-600 cursor-pointer bg-orange-600 hover:text-orange-600 hover:border-orange-600 text-center hover:bg-transparent text-white "
+                            href="">ADD TO CART </a>
+
+                            </div>
+                        </div>
+                        <div class="splide__slide flex flex-row items-center shadow-lg rounded-l-lg"
+                        style="width: 50%; height:60%;">
+                        <div class="bg-purple-600 p-2 rounded-l-lg flex items-center w-5/12">
+                            <img src="img/hero-16-4.svg" alt="" class="scale-125">
+                        </div>
+
+                        <div class="flex flex-col bg-white text-black gap-2 p-4 rounded-r-lg w-5/12">
+                            <h4 class="font-bold text-1xl">Air Max 90 FlyEase</h4>
+                            <div class="flex gap-0.5">
+                                <svg class="h-4 w-4 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                                    <path
+                                        d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                    </path>
+                                </svg>
+                                <svg class="h-4 w-4 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                                    <path
+                                        d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                    </path>
+                                </svg>
+                                <svg class="h-4 w-4 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                                    <path
+                                        d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                    </path>
+                                </svg>
+                                <svg class="h-4 w-4 shrink-0 fill-gray-300" viewBox="0 0 256 256">
+                                    <path
+                                        d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                    </path>
+                                </svg>
+                                <svg class="h-4 w-4 shrink-0 fill-gray-300" viewBox="0 0 256 256">
+                                    <path
+                                        d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="flex flex-row items-center">
+                                <div class="flex flex-col gap-2">
+                                    <h4 class="font-bold text-1xl">$200</h4>
+                                    <p class="text-sm w-8/12 text-slate-600">Women’s Running shoe</p>
+                                </div>
+                                <i class="fa fa-heart text-3xl text-red-600" aria-hidden="true"></i>
+                            </div>
+                            <a class="border-2 rounded-md p-2 border-orange-600 hover:border-orange-600 cursor-pointer bg-orange-600 hover:text-orange-600 hover:border-orange-600 text-center hover:bg-transparent text-white "
+                        href="">ADD TO CART </a>
+
+                        </div>
+                    </div>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+</body>
+
+<script>
+    //to start using the libary
+    AOS.init(
+    );
+    // Grab HTML Elements
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    // Add Event Listeners
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+    var splide = new Splide('.splide', {
+        type: 'loop',
+        perPage: 2,
+        drag: 'free',
+        focus: 'center',
+        breakpoints: {
+            640: {
+                perPage: 1,
+                gap: '.5rem',
+                height: '100%',
+            },
+            480: {
+                perPage: 1,
+                gap: '1rem',
+                height: '100%',
+            },
+        },
+    });
+
+    splide.mount();
+</script>
+
+</html>

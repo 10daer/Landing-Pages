@@ -1,0 +1,469 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/143f4c7aad.js" crossorigin="anonymous"></script>
+
+    <!-- swiper js libary -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- animate on scroll libary -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+</head>
+
+
+<body class="bg-white text-black">
+    <header
+        class=" md:px-20 fixed   bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 w-12/12 inset-x-0 top-0 z-10  ">
+
+        <nav class="flex items-center justify-between p-4" aria-label="Global">
+
+            <div class="mx flex flex-row items-center md:gap-5">
+                <img src="img/logo-21.svg" alt="">
+
+            </div>
+            <ul class="hidden flex flex-row md:flex gap-12">
+                <li><a class="relative text-lg focus:text-black  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Features</a></li>
+                <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Community</a></li>
+                <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">About</a></li>
+                <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Support</a></li>
+                <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">FAQ? </a></li>
+
+            </ul>
+            <div class="nav-3 hidden md:block">
+                <ul class="flex flex-row gap-5">
+                    <a class="bg-indigo-100 p-3 rounded-full text-zinc-500 hover:text-indigo-500 hover:bg-white cursor-pointer border-indigo-100 border-2 "
+                        type="a">
+                        Get Started Today
+                    </a>
+
+                </ul>
+            </div>
+            <!-- mobile section -->
+            <button
+                class="px-3 outline-none mobile-menu-button text-indigo-500 rounded-md p-2 border md:hidden flex border-indigo-500 hover:bg-none hover:text-indigo-500">
+                <i class="fa-solid fa-bars"></i></button>
+        </nav>
+        <div class="hidden mobile-menu ">
+            <ul class="mx-auto pl-10 text-white flex flex-col gap-2">
+
+                <li><a class="relative text-lg focus:text-black  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Features</a></li>
+                <li><a class="relative text-lg  w-fit focus:text-black  block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Community</a></li>
+                <li><a class="relative text-lg  w-fit focus:text-black  block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">About</a></li>
+                <li><a class="relative text-lg  w-fit focus:text-black  block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Support</a></li>
+                <li><a class="relative text-lg  w-fit focus:text-black  block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">FAQ? </a></li>
+            </ul>
+            <div class="nav-3 pl-8 p-4">
+                <ul class="flex flex-row gap-5">
+                    <a class="flex-shrink-0 border-2 border-white hover:border-black rounded-sm px-4 p-2 cursor-pointer z-1 hover:bg-black bg-white text-black   hover:text-white "
+                        type="a">
+                        Login
+                    </a>
+
+                </ul>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </header>
+    <main class="flex flex-col bg-zinc-100  pt-28 gap-10 ">
+
+        <section class="hero flex flex-col gap-5 items-center text-center mx-5 md:mx-10 " data-aos="fade-top">
+            <div class=" flex flex-row items-center justify-center gap-4">
+                <p class="font-light px-5 py-2 text-emerald-500 bg-emerald-100  rounded-full ">Join over +35k community
+                </p>
+            </div>
+            <h4 class="text-2xl md:w-10/12 md:text-5xl" data-aos="zoom-in-up">Creating Global Connection And Building
+                Local Communities</h4>
+            <p class="text-slate-400 md:w-6/12 text-1xl">We bridge the gap between borders, empowering businesses and
+                individuals to thrive on a global scale</p>
+            <div class="flex flex-col md:flex-row gap-5 justify-center  items-center">
+                <a class="bg-indigo-500 p-3 rounded-full text-white hover:text-indigo-500 hover:bg-white cursor-pointer border-indigo-500 border-2 "
+                    type="a" data-aos="fade-left">
+                    Get Started Today
+                </a>
+                <a class="hover:bg-indigo-500 p-2  flex flex-row items-center gap-2 rounded-full hover:text-white text-indigo-500  cursor-pointer border-zinc-100 hover:border-indigo-500 border-2 "
+                    type="a" data-aos="fade-right">
+                    <i class="fa fa-video p-2 bg-indigo-100 rounded-full " aria-hidden="true"></i>
+                    Watch a demo
+                </a>
+            </div>
+            <div class=" pt-5" data-aos="zoom-in-up">
+                <img src="img/hero-21.svg" alt="">
+            </div>
+        </section>
+        <section
+            class=" mx-5 md:mx-10  px-5 md:px-10 flex py-10 rounded-lg flex-col md:flex-row gap-10 justify-between bg-white">
+            <div class="flex flex-col justify-between  gap-5 md:w-3/12" data-aos="fade-right">
+                <div class="gap-5 flex flex-col">
+                    <h4 class="text-2xl font-bold md:w-11/12">Feature for communication solution</h4>
+                    <p>Our robust features are crafted to enhance collaboration, streamline interaction fostering
+                        connections across the globe.</p>
+                </div>
+                <a class="bg-indigo-500 p-3 rounded-full w-8/12 text-white gap-2 items-center flex flex-row hover:text-indigo-500 hover:bg-white cursor-pointer border-indigo-500 border-2 "
+                    type="a">
+                    See more solutions
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="grid md:grid-cols-2 gap-10 md:w-8/12 grid-rows-2 " data-aos="fade-right">
+                <div class="flex gap-5 flex-col hover:shadow-lg cursor-pointer p-4 rounded-lg">
+                   <img src="img/hero-21-3.svg" class=" bg-indigo-100 p-2 text-indigo-500 w-1/12 rounded-full" alt="">
+                    <h4 class="text-bold text-lg text-indigo-500">Real-time collaboration</h4>
+                    <p>Instant messaging, audio, and video calls for seamless real-time team collaboration. </p>
+                </div>
+                <div class="flex gap-5 flex-col hover:shadow-lg cursor-pointer p-4 rounded-lg">
+                    <img src="img/hero-21-4.svg" class=" bg-indigo-100 p-2 text-indigo-500 w-1/12 rounded-full" alt="">
+                    <h4 class="text-bold text-lg text-indigo-500">Scan and Match</h4>
+                    <p>Our scan and match feature intelligently identifies and pairs you with like-minded collaborators
+                    </p>
+                </div>
+                <div class="flex gap-5 flex-col hover:shadow-lg cursor-pointer p-4 rounded-lg">
+                    <img src="img/hero-21-5.svg" class=" bg-indigo-100 p-2 text-indigo-500 w-1/12 rounded-full" alt="">
+                    <h4 class="text-bold text-lg text-indigo-500">Privacy at the Core</h4>
+                    <p>Communicate with confidence using end-to-end encryption, ensuring every conversation is private
+                        and secure,</p>
+                </div>
+                <div class="flex gap-5 flex-col hover:shadow-lg cursor-pointer p-4 rounded-lg">
+                    <img src="img/hero-21-6.svg" class=" bg-indigo-100 p-2 text-indigo-500 w-1/12 rounded-full" alt="">
+                    <h4 class="text-bold text-lg text-indigo-500">Unified Messaging Hub</h4>
+                    <p>One hub for all communication channels ,chats and connection forum. </p>
+                </div>
+            </div>
+        </section>
+
+        <section class=" mx-5 md:mx-10  md:px-20 py:10 flex flex-col md:flex-row justify-between" data-aos="zoom-in-up">
+            <img src="img/hero-21-1.svg" class="md:w-6/12 p-5" alt="">
+            <div class="md:w-4/12 flex flex-col gap-5">
+                <p class="font-light px-5 text-center py-2 text-emerald-500 bg-emerald-100 md:w-5/12  rounded-full ">
+                    Global
+                    Reach</p>
+                <h4 class="text-4xl  ">Forging strong connections worldwide </h4>
+                <p>The platform seamlessly connects users globally while nurturing strong local communities, offering a
+                    unique balance between reaching a global audience.</p>
+                <a class="hover:bg-indigo-500 p-3 rounded-full justify-center md:w-4/12 text-indigo-500 hover:text-white gap-2 items-center flex flex-row hover:text-indigo-500 hover:bg-indigo-500 cursor-pointer border-indigo-500 border-2 "
+                    type="a">
+                    Learn More
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </section>
+        <section class=" mx-5 md:mx-10  md:px-20 py:10 flex flex-col md:flex-row justify-between" data-aos="fade-right">
+
+            <div class="md:w-4/12 flex flex-col gap-5">
+                <p class="font-light px-5 text-center py-2 text-emerald-500 bg-emerald-100 md:w-5/12  rounded-full ">
+                    Global
+                    Scaling</p>
+                <h4 class="text-4xl  ">Empowerment for Businesses and Individuals </h4>
+                <p>Businesses and individuals can thrive on a global scale, empowered by the platform to expand their
+                    reach and connect with like-minded individuals worldwide.</p>
+                <a class="hover:bg-indigo-500 p-3 rounded-full justify-center md:w-4/12 text-indigo-500 hover:text-white gap-2 items-center flex flex-row hover:text-indigo-500 hover:bg-indigo-500 cursor-pointer border-indigo-500 border-2 "
+                    type="a">
+                    Learn More
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+            <img src="img/hero-21-2.svg" class="md:w-6/12 p-5" alt="">
+        </section>
+
+        <section class="bg-white  px-5 md:px-10 gap-5 md:gap-10 items-center flex flex-col py-10">
+            <p class="font-light px-5 text-center py-2 text-emerald-500 bg-emerald-100 md:w-2/12  rounded-full " data-aos="fade-left">Your
+                Answers</p>
+            <h4 class="text-2xl md:w-10/12 text-center md:text-5xl" data-aos="zoom-in-up">Frequently Asked Questions</h4>
+
+            <div class="flex flex-col gap-10  " data-aos="zoom-in-up">
+                <div class="flex flex-col border-2 rounded-xl ">
+                    <button class="flex flex-row items-center question-1  jusfity-between py-5 px-10">
+                        <h4 class="text-lg text-left md:text-2xl w-11/12">What sets GlobNest apart in the realm of
+                            global connections?</h4>
+                        <i class="fa fa-arrow-down w-1/12" aria-hidden="true"></i>
+                    </button>
+                    <p class="bg-zinc-100 text-sm  answer-1 py-5 px-10">Our platform empowers users to effortlessly
+                        expand their reach on a global scale while fostering the spirit of local engagement.</p>
+                </div>
+                <div class="flex flex-col border-2 rounded-xl ">
+                    <button class="flex flex-row items-center question-2   jusfity-between py-5 px-10">
+                        <h4 class="text-lg text-left md:text-2xl w-11/12">Is there a free trial available for GlobNest?
+                        </h4>
+                        <i class="fa fa-arrow-down w-1/12" aria-hidden="true"></i>
+                    </button>
+                    <p class="bg-zinc-100 text-sm  answer-2 py-5 px-10">Our platform empowers users to effortlessly
+                        expand their reach on a global scale while fostering the spirit of local engagement.</p>
+                </div>
+                <div class="flex flex-col border-2 rounded-xl ">
+                    <button class="flex flex-row items-center question-3   jusfity-between py-5 px-10">
+                        <h4 class="text-lg text-left md:text-2xl w-11/12">Which businesses and individuals benefit most
+                            from GlobNest?</h4>
+                        <i class="fa fa-arrow-down w-1/12" aria-hidden="true"></i>
+                    </button>
+                    <p class="bg-zinc-100 text-sm  answer-3 py-5 px-10">Our platform empowers users to effortlessly
+                        expand their reach on a global scale while fostering the spirit of local engagement.</p>
+                </div>
+                <div class="flex flex-col border-2 rounded-xl ">
+                    <button class="flex flex-row  question-4 py-5 px-10">
+                        <h4 class="text-lg text-left md:text-2xl w-11/12">Can I personalize my communication workspace ?
+                        </h4>
+                        <i class="fa fa-arrow-down w-1/12" aria-hidden="true"></i>
+                    </button>
+                    <p class="bg-zinc-100 text-sm  answer-4 py-5 px-10">Our platform empowers users to effortlessly
+                        expand their reach on a global scale while fostering the spirit of local engagement.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer class="pt-10">
+        <div class="relative hidden md:block">
+            <div class="relative flex flex-col gap-40">
+                <p class="text-white -mt-2 mb-2 dark:text-white">Relative parent</p>
+
+                <div class="flex gap-4">
+                    <div
+                        class="flex flex-col absolute top-0 items-center justify-between gap-10 p-5 mx-5 text-white bg-indigo-500 md:mx-32 rounded-2xl md:flex-row md:p-10" data-aos="zoom-in-up">
+                        <div class="flex flex-col gap-2">
+                            <h4 class="font-bold text-1xl md:text-3xl ">Connect Globally,
+                                Thrive Locally with GlobNest!</h4>
+                            <p>Ready to transform the way you connect, collaborate, and create?</p>
+                            <button
+                                class="hover:bg-indigo-500 p-3 bg-white border-white rounded-full w-4/12 text-indigo-500 hover:text-white gap-2 items-center hover:text-indigo-500 hover:bg-indigo-500 cursor-pointer hover:border-indigo-500 border-2 "
+                                href="">Get Started Today</button>
+                        </div>
+
+
+                        <div class="flex flex-col gap-3 md:w-8/12">
+                            <img src="/img/footer-21.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="bg-neutral-100 px-10 pt-60">
+                        <div class="flex flex-col gap-20 items-center md:flex-row ">
+                            <div class="flex flex-col gap-5 p-10 w-4/12">
+                                <div class="flex flex-row gap-5 py-2 text-1xl">
+                                    <button
+                                        class="p-2 text-center text-black bg-white border-2 rounded-full cursor-pointer border-zinc-20 hover:border-black hover:border-2 hover:bg-black hover:text-white"
+                                        href=""><i class="fa text-indigo-500 fa-twitter"
+                                            aria-hidden="true"></i></button>
+                                    <button
+                                        class="p-2 text-center text-black bg-white border-2 rounded-full cursor-pointer border-zinc-20 hover:border-black hover:border-2 hover:bg-black hover:text-white"
+                                        href=""><i class="fa text-indigo-500 fa-facebook"
+                                            aria-hidden="true"></i></button>
+                                    <button
+                                        class="p-2 text-center text-black bg-white border-2 rounded-full cursor-pointer border-zinc-20 hover:border-black hover:border-2 hover:bg-black hover:text-white"
+                                        href=""><i class="fa text-indigo-500 fa-instagram"
+                                            aria-hidden="true"></i></button>
+                                    <button
+                                        class="p-2 text-center text-black bg-white border-2 rounded-full cursor-pointer border-zinc-20 hover:border-black hover:border-2 hover:bg-black hover:text-white"
+                                        href=""><i class="fa text-indigo-500 fa-linkedin"
+                                            aria-hidden="true"></i></button>
+                                </div>
+                                <div class="flex flex-row justify-between gap-3 ">
+                                    <input type="email" name="" placeholder="Enter your email address"
+                                        class="p-4 w-8/12 rounded-full " id="" />
+                                    <button
+                                        class="p-4 w-4/12 bg-indigo-500 p-3 rounded-full text-white hover:text-indigo-500 hover:bg-white cursor-pointer border-indigo-500 border-2 "
+                                        href="">Subscribe</button>
+                                </div>
+                                <p class="text-sm text-zinc-600">Subscribe to stay in the loop with our latest hub tips,
+                                    exclusive offers,
+                                    and exciting product launches.</p>
+
+                            </div>
+                            <div class="flex flex-row gap-20  md:grid-rows-1">
+                                <ul class="flex flex-col gap-2 text-zinc-600 text-left">
+                                    <h4 class="font-bold text-indigo-500 text-md">About Us</h4>
+                                    <li><button> Contact Us </button></li>
+                                    <li><button>Blog</button></li>
+                                    <li><button>Awards & Recognition</button></li>
+                                    <li><button> Customer Stories</button></li>
+                                </ul>
+                                <ul class="flex flex-col gap-2 text-zinc-600 text-left">
+                                    <h4 class="font-bold text-indigo-500 text-md">Customer Service</h4>
+                                    <li><button> Contact Us</button></li>
+                                    <li><button>FAQs</button></li>
+                                    <li><button> Customer Stories</button></li>
+                                    <li><button> Features</button></li>
+                                    <li><button> About Us</button></li>
+                                </ul>
+                                <ul class="flex flex-col gap-2 text-zinc-600 text-left">
+                                    <h4 class="font-bold text-indigo-500 text-md">Accessibility</h4>
+                                    <li><button>Pricing</button></li>
+                                    <li><button> Careers</button></li>
+                                    <li><button>Advertise with Us</button></li>
+                                    <li><button>Brand Assets</button></li>
+                                    
+                                </ul>
+                                <ul class="flex flex-col gap-2 text-zinc-600 text-left">
+                                    <h4 class="font-bold text-indigo-500 text-md">Privacy Policy </h4>
+                                    <li><button>Press Room </button></li>
+                                    <li><button>Cookie Policy</button></li>
+                                    <li><button>Cookies</button></li>
+                                    <li><button>Service Status</button></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex flex-col md:flex-row items-center justify-between border-t-2 py-5 gap-2 md:gap-10">
+                            <h4>©All right reserved • Augustine Ifenna</h4>
+                            <h4>2024 Terms and condition</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <footer class="footer sm:hidden ">
+        <div class="p-5 md:p-10 bg-neutral-100">
+            <div class="flex flex-col gap-2 md:flex-row sm:justify-between">
+                <div class="flex flex-col gap-5 py-5 sm:gap-10">
+                    <div class="flex flex-col gap-5 md:w-6/12">
+                        <div class="flex flex-col gap-5 md:w-4/12">
+                            <div class="flex flex-row gap-5 py-2 text-1xl">
+                                <button
+                                    class="p-2 text-center text-black bg-white border-2 rounded-full cursor-pointer border-zinc-20 hover:border-black hover:border-2 hover:bg-black hover:text-white"
+                                    href=""><i class="fa text-indigo-500 fa-twitter"
+                                        aria-hidden="true"></i></button>
+                                <button
+                                    class="p-2 text-center text-black bg-white border-2 rounded-full cursor-pointer border-zinc-20 hover:border-black hover:border-2 hover:bg-black hover:text-white"
+                                    href=""><i class="fa text-indigo-500 fa-facebook"
+                                        aria-hidden="true"></i></button>
+                                <button
+                                    class="p-2 text-center text-black bg-white border-2 rounded-full cursor-pointer border-zinc-20 hover:border-black hover:border-2 hover:bg-black hover:text-white"
+                                    href=""><i class="fa text-indigo-500 fa-instagram"
+                                        aria-hidden="true"></i></button>
+                                <button
+                                    class="p-2 text-center text-black bg-white border-2 rounded-full cursor-pointer border-zinc-20 hover:border-black hover:border-2 hover:bg-black hover:text-white"
+                                    href=""><i class="fa text-indigo-500 fa-linkedin"
+                                        aria-hidden="true"></i></button>
+                            </div>
+                            <div class="flex flex-row justify-between gap-3 ">
+                                <input type="email" name="" placeholder="Enter your email address"
+                                    class="p-4 w-8/12 rounded-full " id="" />
+                                <button
+                                    class="p-4 w-4/12 bg-indigo-500 p-3 rounded-full text-white hover:text-indigo-500 hover:bg-white cursor-pointer border-indigo-500 border-2 "
+                                    href="">Subscribe</button>
+                            </div>
+                            <p class="text-sm text-zinc-600">Subscribe to stay in the loop with our latest hub tips,
+                                exclusive offers,
+                                and exciting product launches.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 grid-rows-2 gap-10 md:grid-cols-5 md:grid-rows-1 sm:gap-20">
+                    <ul class="flex flex-col gap-2 text-zinc-600 text-left">
+                        <h4 class="font-bold text-indigo-500 text-md">About Us</h4>
+                        <li><button> Contact Us </button></li>
+                        <li><button>Blog</button></li>
+                        <li><button>Awards</button></li>
+                        <li><button> Customer Stories</button></li>
+                    </ul>
+                    <ul class="flex flex-col gap-2 text-zinc-600 text-left">
+                        <h4 class="font-bold text-indigo-500 text-md">Customer Service</h4>
+                        <li><button> Contact Us</button></li>
+                        <li><button>FAQs</button></li>
+                        <li><button> Customer Stories</button></li>
+                        <li><button> Features</button></li>
+                        <li><button> About Us</button></li>
+                    </ul>
+                    <ul class="flex flex-col gap-2 text-zinc-600 text-left">
+                        <h4 class="font-bold text-indigo-500 text-md">Accessibility</h4>
+                        <li><button>Pricing</button></li>
+                        <li><button> Careers</button></li>
+                        <li><button>Advertise with Us</button></li>
+                        <li><button>Brand Assets</button></li>
+                        
+                    </ul>
+                    <ul class="flex flex-col gap-2 text-zinc-600 text-left">
+                        <h4 class="font-bold text-indigo-500 text-md">Privacy Policy </h4>
+                        <li><button>Press Room </button></li>
+                        <li><button>Cookie Policy</button></li>
+                        <li><button>Cookies</button></li>
+                        <li><button>Service Status</button></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center justify-between border-t-2 py-5 gap-2 md:gap-10">
+                <h4>Shop.co © 2000-2023, All Rights Reserved</h4>
+
+                <img src="/img/footer-2.svg" alt="" />
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+<script>
+
+    // Grab HTML Elements
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    // Add Event Listeners
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+
+    // Grab HTML Elements
+    const btn1 = document.querySelector("button.question-1");
+    const menu1 = document.querySelector(".answer-1");
+
+    // Add Event Listeners
+    btn1.addEventListener("click", () => {
+        menu1.classList.toggle("hidden");
+    });
+
+    // Grab HTML Elements
+    const btn2 = document.querySelector("button.question-2");
+    const menu2 = document.querySelector(".answer-2");
+
+    // Add Event Listeners
+    btn2.addEventListener("click", () => {
+        menu2.classList.toggle("hidden");
+    });
+
+    // Grab HTML Elements
+    const btn3 = document.querySelector("button.question-3");
+    const menu3 = document.querySelector(".answer-3");
+
+    // Add Event Listeners
+    btn3.addEventListener("click", () => {
+        menu3.classList.toggle("hidden");
+    });
+
+    // Grab HTML Elements
+    const btn4 = document.querySelector("button.question-4");
+    const menu4 = document.querySelector(".answer-4");
+
+    // Add Event Listeners
+    btn4.addEventListener("click", () => {
+        menu4.classList.toggle("hidden");
+    });
+
+    //to start using the libary
+    AOS.init(
+    );
+</script>
+
+</html>

@@ -1,0 +1,234 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/143f4c7aad.js" crossorigin="anonymous"></script>
+
+    <!-- swiper js libary -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- animate on scroll libary -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+</head>
+<style>
+    html,
+    body {
+        position: relative;
+        height: 100%;
+    }
+
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper {
+        width: 100%;
+
+        height: 50%;
+    }
+
+    .swiper-slide img {
+        width: auto;
+        height: auto;
+
+        max-width: 100%;
+        max-height: 100%;
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    }
+</style>
+
+<body class="bg-white">
+    <header class=" sm:px-20 fixed   bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 w-12/12 inset-x-0 top-0 z-10  ">
+
+        <nav class="flex items-center justify-between p-4" aria-label="Global">
+
+            <div class="mx flex flex-row   items-center sm:gap-5">
+                <h4 class="font-semi-bold text-2xl">The World Of Green</h4>
+            </div>
+            <ul class="hidden flex flex-row text-black   sm:flex gap-12">
+                <li><a class="relative text-lg focus:text-black  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Home</a></li>
+            <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Games</a></li>
+            <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Rules</a></li>
+            <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Map</a></li>
+            </ul>
+            <div class="nav-3 hidden sm:block">
+                           <ul class="flex flex-row gap-5">
+                            <a class="hover:border-2 rounded-md p-2 hover:border-black hover:bg-white hover:text-black bg-black text-white "
+                            href="">Donate</a>
+            </ul>
+            </div>
+            <!-- mobile section -->
+            <button
+                class="px-3 outline-none mobile-menu-button rounded-md p-2 border sm:hidden flex border-white hover:bg-none hover:text-black">
+                <i class="fa-solid fa-bars text-black"></i></button>
+        </nav>
+        <div class="hidden mobile-menu ">
+            <ul class="mx-auto pl-10 text-black flex flex-col gap-2">
+                <li><a class="relative text-lg focus:text-black  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Home</a></li>
+            <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Games</a></li>
+            <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Rules</a></li>
+            <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                    href="">Map</a></li>
+            </ul>
+            <div class="nav-3 pl-8 p-4">
+                <ul class="flex flex-row gap-5">
+                    <a class="hover:border-2 rounded-md p-2 hover:border-black hover:bg-white hover:text-black bg-black text-white "
+                    href="">Donate</a>
+            </ul>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </header>
+    <!-- <header class="navbar  flex flex-row justify-between items-center mx-10 py-5 ">
+        <div class="nav-1 w-2/12 ">
+            <h4 class="font-semi-bold text-2xl">The World Of Green</h4>
+        </div>
+        <div class="nav-2">
+            <ul class="flex flex-row gap-12">
+                <li><a class="relative text-lg focus:text-black  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Home</a></li>
+                <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Games</a></li>
+                <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Rules</a></li>
+                <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Map</a></li>
+            </ul>
+        </div>
+        <div class="nav-3 flex flex-row gap-4">
+            <a class="hover:border-2 rounded-md p-2 hover:border-black hover:bg-white hover:text-black bg-black text-white "
+                href="">Donate</a>
+
+
+        </div>
+    </header> -->
+
+    <main class="flex flex-col  pt-20 gap-10 items-center   mx-10">
+
+        <div class="hero-1 mb-10">
+
+            <div class="flex flex-col items-center gap-10">
+                <div class="flex flex-row sm:h-1/6 justify-between items-center">
+                    <div class="w-2/12 " data-aos="fade-up">
+                        <img src="img/hero-7-2.jpg" class="sm:w-10/12 h-4/6 sm:h-3/6  rounded-full" alt="">
+                    </div>
+                    <div class="">
+                        <h4 class="font-bold text-3xl sm:text-9xl" data-aos="flip-right">Creative Agency</h4>
+                    </div>
+                </div>
+                <div class="flex flex-row h-1/6 justify-between items-center">
+                    <div class="">
+                        <h4 class="font-semi-bold text-3xl sm:text-9xl" data-aos="zoom-in-up">for the</h4>
+                    </div>
+                    <div class=" w-8/12" data-aos="fade-left"><img src="img/hero-7-1.jpg" class="rounded-full " alt=""></div>
+
+                </div>
+                <div class="flex flex-row h-1/6 justify-between items-center">
+                    <div class=" col-start-1 w-6/12 sm:w-8/12  row-start-3"  data-aos="fade-right"><img src="img/hero-7-3.jpg" class="rounded-full "
+                            alt=""></div>
+                    <div class="">
+                        <h4 class="font-bold text-2xl sm:text-6xl" data-aos="flip-left">Clean energy</h4>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <div class="hero-2 sm:mx-10 sm:py-4" data-aos="fade-left">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide hover:translate-y-6 cursor-pointer">
+                    <div class="w-8/12 gap-2 flex flex-col  text-left text-lg p-10">
+                        <p class="">Were a small nonprofit with outrageously </p>
+
+                        <p class="font-bold"> big ideas</p>
+
+                    </div>
+                </div>
+                <div class="swiper-slide hover:translate-y-6 cursor-pointer">
+                    <img src="img/side-7-2.jpg" loading="lazy" style="z-index: -1;" />
+                    <div class="flex flex-col text-left gap-5 p-10 text-white">
+                        <h4 class="font-bold  text-6xl">01</h4>
+                        <p class="font-bold text-2xl sm:text-4xl">Wind power</p>
+                    </div>
+                </div>
+                <div class="swiper-slide hover:translate-y-6 cursor-pointer "> <img src="img/side-7-1.jpg"
+                        loading="lazy" style="z-index: -1;" />
+                    <div class="flex flex-col text-left gap-5 p-10 text-white">
+                        <h4 class="font-bold text-6xl">02</h4>
+                        <p class="font-bold text-4xl">Solar power</p>
+                    </div>
+                </div>
+                <div class="swiper-slide hover:translate-y-6 cursor-pointer"> <img src="img/side-7-3.jpg"
+                        loading="lazy" style="z-index: -1;" />
+                    <div class="flex flex-col text-left gap-5 p-10 text-white">
+                        <h4 class="font-bold text-6xl">03</h4>
+                        <p class="font-bold text-4xl">Greener power</p>
+                    </div>
+                </div>
+                <div class="swiper-slide hover:translate-y-6 cursor-pointer"> <img src="img/side-7-2.jpg"
+                        loading="lazy" style="z-index: -1;" />
+                    <div class="flex flex-col text-left gap-5 p-10 text-white">
+                        <h4 class="font-bold text-6xl">04</h4>
+                        <p class="font-bold text-4xl">Solar power</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</body>
+
+<script>
+   
+     // Grab HTML Elements
+     const btn = document.querySelector("button.mobile-menu-button");
+     const menu = document.querySelector(".mobile-menu");
+ 
+     // Add Event Listeners
+     btn.addEventListener("click", () => {
+         menu.classList.toggle("hidden");
+     });
+      //to start using the libary
+    AOS.init(
+        );
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true,
+            mousewheel: true,
+    
+        });
+</script>
+
+</html>

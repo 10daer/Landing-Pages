@@ -1,0 +1,108 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/143f4c7aad.js" crossorigin="anonymous"></script>
+      <!-- animate on scroll libary -->
+      <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+      <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <header class=" sm:px-20 fixed   bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 w-12/12 inset-x-0 top-0 z-10  ">
+
+        <nav class="flex items-center justify-between p-4" aria-label="Global">
+
+            <div class="mx flex flex-row  sm:w-2/12 items-center sm:gap-5">
+                <img src="img/logo-6.png" class="w-2/12 sm:w-2/12" alt="">
+                <h4 class="font-bold text-md">Flex-learning</h4>
+            </div>
+            <ul class="hidden flex flex-row text-black   sm:flex gap-12">
+               <li><a class="relative focus:text-black  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Accounts</a></li>
+                <li><a class="relative  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Manage</a></li>
+                <li><a class="relative  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Products</a></li>
+                <li><a class="relative  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Play</a></li>
+            </ul>
+            <div class="nav-3 hidden sm:block">
+                           <ul class="flex flex-row gap-5">
+                 <a class="border-2 rounded-md p-2 border-black text-black hover:bg-black hover:text-white  " href="">Log
+                in</a>
+            <a class="border-2 rounded-md p-2 hover:border-black hover:bg-white hover:text-black bg-black text-white "
+                href="">Create Account</a>
+            </ul>
+            </div>
+            <!-- mobile section -->
+            <button
+                class="px-3 outline-none mobile-menu-button rounded-md p-2 border sm:hidden flex border-white hover:bg-none hover:text-black">
+                <i class="fa-solid fa-bars text-black"></i></button>
+        </nav>
+        <div class="hidden mobile-menu ">
+            <ul class="mx-auto pl-10 text-black flex flex-col gap-2">
+               <li><a class="relative focus:text-black  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Accounts</a></li>
+                <li><a class="relative  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Manage</a></li>
+                <li><a class="relative  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Products</a></li>
+                <li><a class="relative  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Play</a></li>
+            </ul>
+            <div class="nav-3 pl-8 p-4">
+                <ul class="flex flex-row gap-5">
+                 <a class="border-2 rounded-md p-2 border-black text-black hover:bg-black hover:text-white  " href="">Log
+                in</a>
+            <a class="border-2 rounded-md p-2 hover:border-black hover:bg-white hover:text-black bg-black text-white "
+                href="">Create Account</a>
+            </ul>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </header>
+
+    <main class="flex flex-col  pt-40 gap-10 sm:gap-80 mx-10">
+        <div class="hero-1 justify-between flex flex-row sm:relative ">
+            <p class="i"></p>
+            <p class="sm:w-4/12 sm:text-right " data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a dignissimos tenetur aut laboriosam
+                 ullam eum eveniet odit natus porro, ipsum aliquam, cumque iure unde aspernatur fuga, perspiciatis quis quisquam!</p>
+        </div>
+        <div class="hero-2 flex  self-center  sm:rotate-45 sm:w-7/12 sm:fixed  sm:mt-24 " >
+            <img src="img/bg-6.png" class="" alt="" data-aos="fade-right">
+        </div>
+        <div class="hero-3  flex flex-col sm:flex-row justify-between gap-10 items-end">
+            <div class="flex flex-col font-bold text-6xl gap-4" data-aos="fade-left">
+                <h4> Unlimited</h4>
+                <h4 class="skew-y-6 ">"Free"</h4>
+                <h4>Classes</h4>
+            </div>
+            
+            <a class="relative font-bold text-right   w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="" >Compare Courses <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+    </main>
+    <script>
+    
+        // Grab HTML Elements
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+    
+        // Add Event Listeners
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+        //to start using the libary
+        AOS.init(
+        );
+    </script>
+</body>
+
+</html>

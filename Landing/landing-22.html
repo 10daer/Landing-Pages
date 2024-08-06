@@ -1,0 +1,451 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/143f4c7aad.js" crossorigin="anonymous"></script>
+
+    <!-- swiper js libary -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- animate on scroll libary -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+</head>
+
+
+<body class="bg-gradient-to-tr from-sky-100 via-emerald-100 to-green-100 text-black">
+    <header
+        class=" md:px-20 fixed   bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 w-12/12 inset-x-0 top-0 z-10  ">
+
+        <nav class="flex items-center justify-between p-4" aria-label="Global">
+
+            <div class="mx flex flex-row items-center md:gap-5">
+                <img src="img/logo-22.svg" alt="">
+
+            </div>
+            <ul class="hidden flex flex-row md:flex gap-12">
+                <li><a class="relative text-lg focus:text-black  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Documentation</a></li>
+                <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Customers</a></li>
+                <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Pricing</a></li>
+                <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Blog</a></li>
+                <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Careers </a></li>
+                <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Enterprise </a></li>
+
+
+            </ul>
+            <div class="nav-3 hidden md:block">
+                <ul class="flex flex-row gap-5">
+                    <a class="hover:bg-teal-800 p-2  flex flex-row items-center gap-2 rounded-full hover:text-white text-teal-900  cursor-pointer border-teal-100 hover:border-teal-100 border-2 "
+                        type="a">
+                        Get Started Today
+                    </a>
+
+                </ul>
+            </div>
+            <!-- mobile section -->
+            <button
+                class="px-3 outline-none mobile-menu-button text-teal-900 rounded-md p-2 border md:hidden flex border-teal-100 hover:bg-none hover:text-teal-900">
+                <i class="fa-solid fa-bars"></i></button>
+        </nav>
+        <div class="hidden mobile-menu ">
+            <ul class="mx-auto pl-10 text-white flex flex-col gap-2">
+
+                <li><a class="relative text-lg focus:text-black  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Features</a></li>
+                <li><a class="relative text-lg  w-fit focus:text-black  block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Community</a></li>
+                <li><a class="relative text-lg  w-fit focus:text-black  block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">About</a></li>
+                <li><a class="relative text-lg  w-fit focus:text-black  block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Support</a></li>
+                <li><a class="relative text-lg  w-fit focus:text-black  block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">FAQ? </a></li>
+            </ul>
+            <div class="nav-3 pl-8 p-4">
+                <ul class="flex flex-row gap-5">
+                    <a class="flex-shrink-0 border-2 border-white hover:border-black rounded-sm px-4 p-2 cursor-pointer z-1 hover:bg-black bg-white text-black   hover:text-white "
+                        type="a">
+                        Login
+                    </a>
+
+                </ul>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </header>
+    <main class="flex flex-col pt-20 md:pt-40 ">
+
+        <section class="hero flex flex-col gap-5 items-center text-center mx-5 md:mx-10 py-10 " >
+            <h4 class="text-2xl md:w-8/12 text-teal-900 md:text-6xl" data-aos="zoom-in-up">The documentation
+                you want, effortlessly</h4>
+            <p class="text-slate-400 md:w-6/12 text-teal-900 text-1xl">Meet the modern standard for public facing
+                documentation. Beautiful out of
+                the box, easy to maintain, and optimized for user engagement.</p>
+            <div class="flex flex-col md:flex-row gap-5 justify-center  items-center">
+                <a class="bg-teal-800 p-3 rounded-full text-white hover:text-teal-900 hover:bg-white cursor-pointer border-teal-100 border-2 "
+                    type="a" data-aos="fade-left">
+                    Get Started Today
+                </a>
+                <a class="hover:bg-teal-800 p-2  flex flex-row items-center gap-2 rounded-full hover:text-white text-teal-900  cursor-pointer border-teal-100 hover:border-teal-100 border-2 "
+                    type="a" data-aos="fade-right">Documentation
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 grid-rows-2 md:grid-rows-1 md:gap-10 border-teal-600 border-2 p-2 rounded-lg md:rounded-full">
+                <a class="hover:bg-teal-800 p-2  flex flex-row items-center gap-2 rounded-full hover:text-white text-teal-900  cursor-pointer border-teal-100 hover:border-teal-100 border-2 "
+                    type="a" data-aos="fade-right">
+                    <img src="img/book.svg" alt="">
+
+                    Guides
+                </a>
+                <a class="hover:bg-teal-800 p-2  flex flex-row items-center gap-2 rounded-full hover:text-white text-teal-900  cursor-pointer border-teal-100 hover:border-teal-100 border-2 "
+                    type="a" data-aos="fade-right">
+                    <img src="img/run.svg" alt="">
+                    API Reference
+                </a>
+                <a class="hover:bg-teal-800 p-2  flex flex-row items-center gap-2 rounded-full hover:text-white text-teal-900  cursor-pointer border-teal-100 hover:border-teal-100 border-2 "
+                    type="a" data-aos="fade-right">
+                    <img src="img/sdk.svg" alt="">
+                    SDK Docs
+                </a>
+                <a class="hover:bg-teal-800 p-2  flex flex-row items-center gap-2 rounded-full hover:text-white text-teal-900  cursor-pointer border-teal-100 hover:border-teal-100 border-2 "
+                    type="a" data-aos="fade-right">
+                    <img src="img/chat.svg" class=" " alt="">
+                    Chat
+                </a>
+            </div>
+            <div class=" pt-5" data-aos="zoom-in-up">
+                <img src="img/hero-22.svg" alt="">
+            </div>
+        </section>
+        <section class="md:mx-auto gap-10 mx-5 md:mx-10 flex items-center flex-col py-10">
+            <div class="flex flex-col text-center md:flex-row items-center">
+                <h4>Powering developer experiences from fast growing startups to enterprises.</h4>
+                <a class="hover:bg-teal-800 p-2  flex flex-row items-center gap-2 rounded-full hover:text-white text-teal-900  cursor-pointer border-teal-100 hover:border-teal-100 border-2 "
+                    type="a" data-aos="fade-right">Learn More
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-10 md:gap-20 grid-rows-2">
+                <img src="img/hero-22-1.svg" class="" alt="">
+                <img src="img/hero-22-2.svg" class="" alt="">
+                <img src="img/hero-22-3.svg" class="" alt="">
+                <img src="img/hero-22-4.svg" class="" alt="">
+                <img src="img/hero-22-5.svg" class="" alt="">
+                <img src="img/hero-22-6.svg" class="" alt="">
+                <img src="img/hero-22-7.svg" class="" alt="">
+                <img src="img/hero-22-8.svg" class="" alt="">
+                <img src="img/hero-22-9.svg" class="" alt="">
+                <img src="img/hero-22-10.svg" class="" alt="">
+            </div>
+        </section>
+     
+        <section class="hero flex flex-col gap-5 px-5 items-center bg-white text-center py-10 " >
+            <div class="flex flex-row items-center gap-2">
+                <img src="img/book.svg" alt="">
+                <p class="text-slate-400  text-teal-900 text-1xl">
+                    The modern standard</p>
+            </div>
+            <h4 class="text-2xl md:w-8/12 text-teal-900 md:text-6xl" data-aos="zoom-in-up">Beautiful documentation
+                that converts users</h4>
+            <p class="text-slate-400 md:w-6/12 text-teal-900 text-1xl">A platform you can rely on to reach your audience
+            </p>
+            <div class="grid grid-cols-1 px-10 md:grid-cols-3 md:grid-rows-2 gap-4 md:mx-40">
+                <div class="items-center text-center justify-around flex flex-col p-5 bg-zinc-100 rounded-lg">
+                    <img src="img/hero-22-11.svg" alt="">
+                    <div>
+                        <h4 class="font-bold pt-5 md:text-1xl">Environment Variables</h4>
+                        <p class="">Automate configuring the low-level Kube</p>
+                    </div>
+
+                </div>
+                <div
+                    class="md:col-span-2 items-center text-center justify-around flex flex-col p-5 bg-zinc-100 rounded-lg">
+                    <img src="img/hero-22-12.svg" alt="">
+                    <div>
+                        <h4 class="font-bold pt-5 md:text-1xl">Environment Variables</h4>
+                        <p class="">Automate configuring the low-level Kube</p>
+
+                    </div>
+                </div>
+                <div
+                    class="md:row-start-2 items-center text-center justify-around flex flex-col p-5 bg-zinc-100 rounded-lg">
+                    <img src="img/hero-22-13.svg" alt="">
+                    <div>
+                        <h4 class="font-bold pt-5 md:text-1xl">Environment Variables</h4>
+                        <p class="">Automate configuring the low-level Kube</p>
+
+                    </div>
+                </div>
+                <div
+                    class="md:row-start-2 items-center text-center justify-around flex flex-col p-5 bg-zinc-100 rounded-lg">
+                    <img src="img/hero-22-14.svg" alt="">
+                    <div>
+                        <h4 class="font-bold pt-5 md:text-1xl">Environment Variables</h4>
+                        <p class="">Automate configuring the low-level Kube</p>
+
+                    </div>
+                </div>
+                <div
+                    class="md:row-start-2 items-center text-center justify-around flex flex-col p-5 bg-zinc-100 rounded-lg">
+                    <img src="img/hero-22-15.svg" alt="">
+                    <div>
+                        <h4 class="font-bold pt-5 md:text-1xl">Environment Variables</h4>
+                        <p class="">Automate configuring the low-level Kube</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero flex flex-col gap-5 items-center bg-white text-center py-10 bg-[url('img/bg-22-1.svg')]" >
+            <div class="flex flex-row items-center gap-2">
+                <i class="fa fa-rocket text-teal-900" aria-hidden="true"></i>
+                <p class=" text-teal-900 text-1xl">Features</p>
+            </div>
+            <h4 class="text-2xl md:w-8/12 text-teal-900 md:text-6xl" data-aos="zoom-in-up">Documentation leveled up</h4>
+            <p class="md:w-6/12 text-teal-900 text-1xl">Built for the modern business to engage users
+            </p>
+            <div class=" pt-5" data-aos="zoom-in-up">
+                <img src="img/hero-22-16.svg" alt="">
+            </div>
+
+            <div class="flex flex-col gap-10 items-center">
+                <h4 class="text-2xl md:w-8/12 text-teal-900 md:text-4xl" data-aos="zoom-in-up">AI Chat</h4>
+                <p class="md:w-8/12 text-teal-900 text-1xl">GPT-4 powered chat box for users to get
+                    direct answers to their questions</p>
+                    <a class="hover:bg-teal-800 p-2  flex flex-row items-center gap-2 rounded-full hover:text-white text-teal-900  cursor-pointer border-teal-100 hover:border-teal-100 border-2 "
+                    type="a" data-aos="fade-right">Get Started
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </section>
+        <section
+        class=" px-5 md:px-40 flex py-10 rounded-lg flex-col md:flex-row gap-10 justify-between bg-white">
+        <div class="grid md:grid-cols-3 gap-10 grid-rows-2 " data-aos="fade-right">
+            <div class="flex gap-5 flex-col hover:shadow-lg cursor-pointer p-4 rounded-lg border-2">
+                <img src="img/hero-22-17.svg" class=" w-2/12 " alt="">
+                <h4 class="text-bold text-lg text-teal-900">Editingn</h4>
+                <p> Editing workflow built into where you
+                    work </p>
+            </div>
+            <div class="flex gap-5 flex-col hover:shadow-lg cursor-pointer p-4 rounded-lg border-2">
+                <img src="img/hero-22-18.svg" class=" w-2/12" alt="">
+                <h4 class="text-bold text-lg text-teal-900">API Playground</h4>
+                <p>Interactive experience built around your
+                    APIs
+                </p>
+            </div>
+            <div class="flex gap-5 flex-col hover:shadow-lg cursor-pointer p-4 rounded-lg border-2">
+                <img src="img/hero-22-19.svg" class="w-2/12" alt="">
+                <h4 class="text-bold text-lg text-teal-900">Documentation Analytics</h4>
+                <p>Understand what users are viewing and
+                    where they are converting
+                </p>
+            </div>
+            <div class="flex gap-5 flex-col hover:shadow-lg cursor-pointer p-4 rounded-lg border-2">
+                <img src="img/hero-22-20.svg" class="w-2/12" alt="">
+                <h4 class="text-bold text-lg text-teal-900">Search</h4>
+                <p>Content is indexed on every update for
+                    lightning fast full-text search
+                </p>
+            </div>
+            <div class="flex gap-5 flex-col hover:shadow-lg cursor-pointer p-4 rounded-lg border-2">
+                <img src="img/hero-22-21.svg" class="w-2/12" alt="">
+                <h4 class="text-bold text-lg text-teal-900">Leads Generator</h4>
+                <p>Identify sales prospects viewing your
+                    documentation</p>
+            </div>
+            <div class="flex gap-5 flex-col hover:shadow-lg cursor-pointer p-4 rounded-lg border-2">
+                <img src="img/hero-22-22.svg" class="w-2/12" alt="">
+                <h4 class="text-bold text-lg text-teal-900">Preview Deployments</h4>
+                <p>Review and share your changes before
+                    they go live </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero flex flex-col gap-5 items-center  text-center py-10 ">
+        <div class="flex flex-row items-center gap-2">
+            <i class="fa fa-heart text-teal-900" aria-hidden="true"></i>
+            <p class=" text-teal-900 text-1xl">Wall of love</p>
+        </div>
+        <h4 class="text-2xl md:w-8/12 text-teal-900 md:text-6xl" data-aos="zoom-in-up">Built to impress</h4>
+        <p class="md:w-6/12 text-teal-900 text-1xl">Why leading companies build with Mintlify
+        </p>
+
+        <div class="grid md:grid-cols-3 px-5 md:grid-rows-2 md:mx-40">
+            <div class="p-2 sm:p-6 text-left gap-5 flex flex-col rounded  hover:shadow-lg cursor-pointer" >
+                <div class="flex items-center mt-4 space-x-4">
+                    <img src="https://source.unsplash.com/50x50/?portrait?1" alt=""
+                        class="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500">
+                    <div>
+                        <p class="text-lg font-semibold">Foster Kean</p>
+                        <p class="text-sm ">Customer.</p>
+                    </div>
+                </div>
+                <p class="text-zinc-500">An audire commodo habemus cum. Ne sed corrumpit repudiandae. Tota aliquip
+                    democritum pro in, nec democritum intellegam ne. Propriae volutpat dissentiet ea
+                    sit, nec at lorem inani tritani, an ius populo perfecto vituperatoribus. Eu cum
+                    case modus salutandi, ut eum vocent sensibus reprehendunt.</p>
+                
+            </div>
+            <div class="p-2 sm:p-6 text-left gap-5 flex flex-col rounded  hover:shadow-lg cursor-pointer" >
+                <div class="flex items-center mt-4 space-x-4">
+                    <img src="https://source.unsplash.com/50x50/?portrait?1" alt=""
+                        class="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500">
+                    <div>
+                        <p class="text-lg font-semibold">Foster Kean</p>
+                        <p class="text-sm ">Customer.</p>
+                    </div>
+                </div>
+                <p class="text-zinc-500">An audire commodo habemus cum. Ne sed corrumpit repudiandae. Tota aliquip
+                    democritum pro in, nec democritum intellegam ne. Propriae volutpat dissentiet ea
+                    sit, nec at lorem inani tritani, an ius populo perfecto vituperatoribus. Eu cum
+                    case modus salutandi, ut eum vocent sensibus reprehendunt.</p>
+                
+            </div>
+            <div class="p-2 sm:p-6 text-left gap-5 flex flex-col rounded  hover:shadow-lg cursor-pointer" >
+                <div class="flex items-center mt-4 space-x-4">
+                    <img src="https://source.unsplash.com/50x50/?portrait?1" alt=""
+                        class="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500">
+                    <div>
+                        <p class="text-lg font-semibold">Foster Kean</p>
+                        <p class="text-sm ">Customer.</p>
+                    </div>
+                </div>
+                <p class="text-zinc-500">An audire commodo habemus cum. Ne sed corrumpit repudiandae. Tota aliquip
+                    democritum pro in, nec democritum intellegam ne. Propriae volutpat dissentiet ea
+                    sit, nec at lorem inani tritani, an ius populo perfecto vituperatoribus. Eu cum
+                    case modus salutandi, ut eum vocent sensibus reprehendunt.</p>
+                
+            </div>
+            <div class="p-2 sm:p-6 text-left gap-5 flex flex-col rounded  hover:shadow-lg cursor-pointer" >
+                <div class="flex items-center mt-4 space-x-4">
+                    <img src="https://source.unsplash.com/50x50/?portrait?1" alt=""
+                        class="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500">
+                    <div>
+                        <p class="text-lg font-semibold">Foster Kean</p>
+                        <p class="text-sm ">Customer.</p>
+                    </div>
+                </div>
+                <p class="text-zinc-500">An audire commodo habemus cum. Ne sed corrumpit repudiandae. Tota aliquip
+                    democritum pro in, nec democritum intellegam ne. Propriae volutpat dissentiet ea
+                    sit, nec at lorem inani tritani, an ius populo perfecto vituperatoribus. Eu cum
+                    case modus salutandi, ut eum vocent sensibus reprehendunt.</p>
+                
+            </div>
+            <div class="p-2 sm:p-6 text-left gap-5 flex flex-col rounded  hover:shadow-lg cursor-pointer" >
+                <div class="flex items-center mt-4 space-x-4">
+                    <img src="https://source.unsplash.com/50x50/?portrait?1" alt=""
+                        class="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500">
+                    <div>
+                        <p class="text-lg font-semibold">Foster Kean</p>
+                        <p class="text-sm ">Customer.</p>
+                    </div>
+                </div>
+                <p class="text-zinc-500">An audire commodo habemus cum. Ne sed corrumpit repudiandae. Tota aliquip
+                    democritum pro in, nec democritum intellegam ne. Propriae volutpat dissentiet ea
+                    sit, nec at lorem inani tritani, an ius populo perfecto vituperatoribus. Eu cum
+                    case modus salutandi, ut eum vocent sensibus reprehendunt.</p>
+                
+            </div>
+            <div class="p-2 sm:p-6 text-left gap-5 flex flex-col rounded  hover:shadow-lg cursor-pointer" >
+                <div class="flex items-center mt-4 space-x-4">
+                    <img src="https://source.unsplash.com/50x50/?portrait?1" alt=""
+                        class="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500">
+                    <div>
+                        <p class="text-lg font-semibold">Foster Kean</p>
+                        <p class="text-sm ">Customer.</p>
+                    </div>
+                </div>
+                <p class="text-zinc-500">An audire commodo habemus cum. Ne sed corrumpit repudiandae. Tota aliquip
+                    democritum pro in, nec democritum intellegam ne. Propriae volutpat dissentiet ea
+                    sit, nec at lorem inani tritani, an ius populo perfecto vituperatoribus. Eu cum
+                    case modus salutandi, ut eum vocent sensibus reprehendunt.</p>
+                
+            </div>
+
+        </div>
+    </section>
+    </main>
+
+
+
+    <footer class="pt-10">
+        <div class="bg-neutral-100 px-10 py-10">
+            <div class="flex flex-col gap-20 items-center md:flex-row ">
+                <div class="flex flex-col gap-5 p-10 md:w-4/12">
+                    <img src="img/logo-22.svg" class="md:w-6/12" alt="">
+                    <div class="flex flex-row gap-5 py-2 text-1xl">
+                        <button class="p-2 text-center text-teal-900" href=""><i class="fa text-teal-900 fa-twitter"
+                                aria-hidden="true"></i></button>
+                        <button class="p-2 text-center text-teal-900" href=""><i class="fa text-teal-900 fa-github"
+                                aria-hidden="true"></i></button>
+                        <button class="p-2 text-center text-teal-900" href=""><i class="fa text-teal-900 fa-instagram"
+                                aria-hidden="true"></i></button>
+                    </div>
+
+                </div>
+                <div class="flex flex-row gap-20 justify-between  md:grid-rows-1">
+                    <ul class="flex flex-col gap-2 text-zinc-600 text-left">
+                        <h4 class="font-bold text-teal-900 text-md">Product</h4>
+                        <li><button>Documentation</button></li>
+                        <li> <button>Pricing</button>
+                        <li><button> Enterprise</button></li>
+                    </ul>
+                    <ul class="flex flex-col gap-2 text-zinc-600 text-left">
+                        <h4 class="font-bold text-teal-900 text-md">Company</h4>
+                        <li><button>Careers</button></li>
+                        <li><button>Customers</button></li>
+                        <li><button> Blog</button></li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center justify-between border-t-2 py-5 gap-2 md:gap-10">
+                <h4>©All right reserved</h4>
+                <h4>© 2023 Mintlify, Inc.</h4>
+                <h4>2024 Terms and condition</h4>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+
+    // Grab HTML Elements
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    // Add Event Listeners
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+
+    //to start using the libary
+    AOS.init(
+    );
+</script>
+
+</html>

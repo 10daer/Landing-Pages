@@ -1,0 +1,445 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/143f4c7aad.js" crossorigin="anonymous"></script>
+
+    <!-- swiper js libary -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- animate on scroll libary -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body class=" text-black bg-white">
+    <header
+        class=" md:px-20 fixed md:mt-5   bg-gray-400 border-2 border-bg-black border-pill rounded-lg bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 w-12/12 md:w-8/12 mx-auto inset-x-0 top-0 z-10 ">
+
+        <nav class="flex items-center justify-between p-4" aria-label="Global">
+
+            <div class="mx flex flex-row md:w-2/12  items-center md:gap-5" data-aos="zoom-in-up">
+                <img src="img/logo-20.svg" class="w-8/12 md:w-8/12" alt="">
+            </div>
+            <ul class="hidden flex flex-row  items-center md:flex gap-12">
+                <li><a class="relative text-md focus:text-black  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Docs</a></li>
+                <li><a class="relative text-md  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Pricing</a></li>
+                <li><a class="relative text-md  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">About</a></li>
+                <li><a class="relative text-md  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Blog</a></li>
+                <li><a class="relative text-md  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Community</a></li>
+
+            </ul>
+            <div class="nav-3 hidden md:block">
+                <ul class="flex flex-row">
+                    <a class=" rounded-md p-2 border-black border-2 cursor-pointer text-sm hover:bg-black hover:text-white hover:bg-zinic-600 bg-none text-black "
+                        href=""><i class="fa fa-github" aria-hidden="true"></i> Support Us</a>
+                </ul>
+            </div>
+            <!-- mobile section -->
+            <button
+                class="px-3 outline-none mobile-menu-button cursor-pointer rounded-md p-2 border md:hidden flex border-black  hover:bg-none hover:text-black">
+                <i class="fa-solid fa-bars"></i></button>
+        </nav>
+        <div class="hidden mobile-menu">
+            <ul class="mx-auto gap-20">
+                <li class=" py-3 px-5   transition duration-300"><a href="index.html">Docs</a></li>
+                <li class=" py-3 px-5   transition duration-300"><a href="about.html">About</a></li>
+                <li class=" py-3 px-5   transition duration-300"><a href="">Pricings</a></li>
+                <li class=" py-3 px-5   transition duration-300"><a href="">product tour</a></li>
+                <li class=" py-3 px-5   transition duration-300"><a href="">blog</a></li>
+            </ul>
+        </div>
+        <div>
+
+        </div>
+    </header>
+
+    <main class=" pt-24 bg-[url('img/bg-15.svg')]  md:pt-28 gap-10 items-center  ">
+        <section class="hero flex flex-col  md:flex-row gap-20 items-center py-10 md:justify-between ">
+
+            <div class="hero-1 flex flex-col gap-2 mx-5 md:mx-10 md:w-7/12">
+                <h4 class="text-2xl md:text-6xl text-neutral-800 font-light" data-aos="zoom-in-up">The application platform
+                    for Kubernetes
+                </h4>
+
+                <div class="py-5 flex flex-col  gap-10" data-aos="fade-right">
+                    <p class="text-md text-justify text-slate-500 md:w-10/12">Deploy, manage and troubleshoot cloud-native
+                        applications
+                        at scale without overwhelming your engineers with the
+                        complexity of Kubernetes.
+                    </p>
+                    <div class="flex flex-col md:flex-row gap-5" data-aos="zoom-in-up">
+                        <a class=" rounded-lg p-3 md:w-4/12 text-center border-black border-2  hover:border-black hover:border-2 cursor-pointer hover:bg-white hover:text-black hover:bg-zinic-600 bg-black text-white "
+                            href="">Documentation <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        <a class=" rounded-lg p-3 md:w-4/12 gap-2 text-center border-black border-2  hover:border-black hover:border-2 cursor-pointer hover:bg-white hover:text-black hover:bg-zinic-600 bg-black text-white "
+                            href=""><i class="fa fa-github" aria-hidden="true"></i> Get Started</a>
+                    </div>
+                    <p class="text-md text-justify text-slate-500 md:w-10/12">Compatible with</p>
+                    <div class="flex flex-row gap-5" data-aos="zoom-in-up">
+                        <img src="img/amazon-logo.svg" alt="">
+                        <img src="img/google-cloud-logo.svg" alt="">
+                        <img src="img/digital-ocen-logo.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="hero-2  md:w-8/12" data-aos="zoom-in-left" >
+                <img src="img/hero-20.svg" alt="" class="md:w-12/12 ">
+            </div>
+        </section>
+        <section class="py-10 px-2 md:px-10 bg-zinc-100">
+            <section class="flex flex-col items-center gap-5 md:gap-20">
+                <p
+                    class="text-md text-center text-zinc-900 py-2 text-center border-2 border-black rounded-full w-10/12 md:w-3/12 bg-white" data-aos="fade-right">
+                    Fixing K8 complexity</p>
+                <h4 class="text-3xl md:text-4xl font-bold md:w-7/12 text-center text-zinc-900 font-light"
+                    data-aos="zoom-in-up">Don’t let the complexity of Kubernetes
+                    leak into your engineering team
+                </h4>
+                <div class="flex flex-col md:flex-row gap-10">
+                    <div class="p-10 flex flex-col rounded-lg gap-5 bg-white md:w-4/12 hover:shadow-lg" data-aos="fade-right">
+                        <img src="img/hero-20-1.svg" alt="">
+                        <h4 class="text-sm md:text-2xl font-bold text-zinc-900 font-light" data-aos="zoom-in-up">
+                            Abstract Away K8s Primitives
+                        </h4>
+                        <p class="text-md text-justify text-slate-500" data-aos="zoom-in-right">Deploy, manage and debug applications with
+                            end-to-end ownership without experiencing
+                            bottlenecks or battling Kubernetes hurdles.
+                        </p>
+                    </div>
+                    <div class="p-10 flex flex-col rounded-lg gap-5 bg-white md:w-4/12 hover:shadow-lg" data-aos="fade-right">
+                        <img src="img/hero-20-2.svg" alt="">
+                        <h4 class="text-sm md:text-2xl font-bold text-zinc-900 font-light" data-aos="zoom-in-up">
+                            Proactively Troubleshoot
+                        </h4>
+                        <p class="text-md text-justify text-slate-500" data-aos="zoom-in-right">Identify availability issues, misconfigurations,
+                            lack of resources, K8s anomalies and failed
+                            deploys w. feedback and health checks.
+                        </p>
+                    </div>
+                    <div class="p-10 flex flex-col rounded-lg gap-5 bg-white md:w-4/12 hover:shadow-lg" data-aos="fade-right">
+                        <img src="img/hero-20-3.svg" alt="">
+                        <h4 class="text-sm md:text-2xl font-bold text-zinc-900 font-light" data-aos="zoom-in-up">
+                            Developer Tools
+                        </h4>
+                        <p class="text-md text-justify text-slate-500" data-aos="zoom-in-right">Robust tooling that encompass a CLI, an
+                            extensive developer-interfaces and cloud-
+                            native CI/CD integrations.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="md:px-5 py-10 mt-20 bg-stone-900 text-white">
+                <div class="hero-1 py-10 flex flex-col gap-2 mx-5 md:mx-10 ">
+                    <div class="flex flex-row border-2 border-zinc-700 gap-2 items-center p-2 md:w-4/12 rounded-full ">
+                        <img src="img/logo-20-2.svg" class="w-1/12 md:w-1/12" alt="">
+                        <p class="text-sm md:text-lg text-center ">Convention over Configuration</p>
+
+                    </div>
+                    <h4 class="text-3xl md:text-5xl font-light" data-aos="zoom-in-up">Developer-Friendly Kubernetes
+                        Abstractions
+                    </h4>
+
+                    <div class="py-5 flex flex-col  gap-10" data-aos="fade-right">
+                        <p class="text-md text-justify text-slate-200 md:w-6/12">Deploy and scale applications without battling the
+                            intricacies of K8s and
+                            spending valuable time configuring low-level K8s resources repeatedly.
+                        </p>
+                        <div class="flex flex-row gap-5" data-aos="zoom-in-up">
+                            <a class=" rounded-lg p-3 md:w-3/12 text-center border-black border-2  hover:border-white hover:border-2 cursor-pointer hover:bg-transparent hover:bg-zinic-600 bg-white hover:text-white text-black "
+                                href="">Explore documentation <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-col-1  md:grid-cols-3 grid-row-3 md:grid-rows-2 mx-5 md:mx-10 gap-4">
+                    <div class="md:col-span-2 flex flex-col border-2 border-zinc-700 rounded-lg bg-neutral-800 p-2 gap-5 items-center text-center" data-aos="zoom-in-up">
+                        <img src="img/hero-20-4.svg" alt="">
+                        <h4  class="font-bold md:text-1xl">Autoscaler</h4>
+                        <p  class="md:w-8/12">Seamlessly enable vertical- and horizontal autoscaling with CPU- &
+                            Memory limits, number of replicas & avg. CPU utilisation Targets.</p>
+                    </div>
+                    <div class="md:col-start-3 flex flex-col border-2 border-zinc-700 rounded-lg bg-neutral-800 p-2 gap-5 items-center text-center" data-aos="zoom-in-up"><img src="img/hero-20-5.svg"
+                            alt="">
+                        <h4  class="font-bold md:text-1xl">AutNetwork Interfacesoscaler</h4>
+                        <p  class="md:w-10/12">Manage Private and Public Network Interfaces and 
+                            let Rig automatically handle the rest.</p>
+                    </div>
+                    <div class="md:row-start-2 flex flex-col border-2 border-zinc-700 rounded-lg bg-neutral-800 p-2 gap-5 items-center text-center" data-aos="zoom-in-up"><img src="img/hero-20-6.svg"
+                            alt="">
+                        <h4  class="font-bold md:text-1xl">Environment Variables</h4>
+                        <p  class="md:w-8/12">Automate configuring the low-level Kubernetes 
+                            resources on both container and pod-level.</p>
+                    </div>
+                    <div class="md:col-span-2 row-start-2 flex flex-col border-2 border-zinc-700 rounded-lg bg-neutral-800 p-2 gap-5 items-center text-center" data-aos="zoom-in-up"><img
+                            src="img/hero-20-7.svg" alt="">
+                        <h4  class="font-bold md:text-1xl">Config Files</h4>
+                        <p  class="md:w-8/12">Our platform simplifies config files and their mounting. 
+                            Don’t spend time changing low-level K8s resources.</p>
+                    </div>
+                </div>
+
+                <div class="hero-1 py-10 flex flex-col gap-2 mx-5 md:mx-10 ">
+                    <div class="flex flex-row border-2 border-zinc-700 gap-2 items-center p-2 md:w-2/12 rounded-full ">
+                        <img src="img/logo-20-2.svg" class="w-1/12 md:w-1/12" alt="">
+                        <p class="text-sm md:text-lg text-center ">Deployment</p>
+
+                    </div>
+                    <h4 class="text-3xl md:text-5xl font-light" data-aos="zoom-in-up">Flexible and scalable Deployment Engine
+                    </h4>
+
+                    <div class="py-5 flex flex-col  gap-10" data-aos="fade-right">
+                        <p class="text-md text-justify text-slate-200 md:w-6/12">Deploy and manage any application on any cloud provider with Rig and Kubernetes. Rig enables developers to 
+                            deploy well-configured applications in Kubernetes without the complexity.
+                        </p>
+                        <div class="flex flex-row gap-5" data-aos="zoom-in-up">
+                            <a class=" rounded-lg p-3 md:w-3/12 text-center border-black border-2  hover:border-white hover:border-2 cursor-pointer hover:bg-transparent hover:bg-zinic-600 bg-white hover:text-white text-black "
+                                href="">Explore documentation <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-col-1 ms:grid-cols-3 md:grid-rows-1 mx-5 md:mx-10 gap-4">
+                    <div class="md:col-start-1 flex flex-col border-2 border-zinc-700 rounded-lg bg-neutral-800 p-5 gap-5" data-aos="zoom-in-up">
+                        <h4  class="font-bold md:text-1xl">Autoscaler</h4>
+                        <p  class="md:w-10/12">Seamlessly enable vertical- and horizontal autoscaling with CPU- &
+                            Memory limits, number of replicas & avg. CPU utilisation Targets.</p>
+                            <img src="img/hero-20-8.svg" alt="">
+                    </div>
+                    <div class="md:col-start-2 flex flex-col border-2 border-zinc-700 rounded-lg bg-neutral-800 p-5 gap-5" data-aos="zoom-in-up">
+                       
+                        <h4  class="font-bold md:text-1xl">AutNetwork Interfacesoscaler</h4>
+                        <p  class="md:w-10/12">Manage Private and Public Network Interfaces and 
+                            let Rig automatically handle the rest.</p>
+                            <img src="img/hero-20-9.svg" alt="">
+                    </div>
+                    <div class="md:col-start-3 flex flex-col border-2 border-zinc-700 rounded-lg bg-neutral-800 p-5 gap-5" data-aos="zoom-in-up">
+                       
+                        <h4  class="font-bold md:text-1xl">Environment Variables</h4>
+                        <p  class="md:w-10/12">Automate configuring the low-level Kubernetes 
+                            resources on both container and pod-level.</p>
+                            <img src="img/hero-20-10.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="hero-1 py-10 flex flex-col gap-2 mx-5 md:mx-10 ">
+                    <div class="flex flex-row border-2 border-zinc-700 gap-2 items-center p-2 md:w-3/12 rounded-full ">
+                        <img src="img/logo-20-2.svg" class="w-1/12 md:w-1/12" alt="">
+                        <p class="text-sm md:text-lg text-center ">Troubleshoot & Debug</p>
+
+                    </div>
+                    <h4 class="text-3xl md:text-5xl font-light" data-aos="zoom-in-up">Troubleshooting made simple
+                    </h4>
+
+                    <div class="py-5 flex flex-col  gap-10" data-aos="fade-right">
+                        <p class="text-md text-justify text-slate-200 md:w-6/12">Deploy and manage any application on any cloud provider with Rig and Kubernetes. Rig 
+                            enables developers to deploy well-configured applications in Kubernetes without.
+                        </p>
+                        <div class="flex flex-row gap-5" data-aos="zoom-in-up">
+                            <a class=" rounded-lg p-3 md:w-3/12 text-center border-black border-2  hover:border-white hover:border-2 cursor-pointer hover:bg-transparent hover:bg-zinic-600 bg-white hover:text-white text-black "
+                                href="">Explore documentation <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-col-1 ms:grid-cols-4 md:grid-rows-1 mx-5 md:mx-10 gap-4">
+                    <div class="md:col-start-1 flex flex-col border-2 border-zinc-700 rounded-lg bg-neutral-800 p-5 gap-5" data-aos="zoom-in-up">
+                        <img src="img/hero-20-11.svg" class="bg-zinc-700 p-2 rounded-lg w-4/12 md:w-3/12" alt="">
+                        <h4  class="font-bold md:text-1xl">Cluster insights</h4>
+                        <p  class="">High-level access to cluster 
+                            health, features and issues.</p>
+                            
+                    </div>
+                    <div class="md:col-start-2 flex flex-col border-2 border-zinc-700 rounded-lg bg-neutral-800 p-5 gap-5" data-aos="zoom-in-up">
+                       <img src="img/hero-20-12.svg" class="bg-zinc-700 p-2 rounded-lg w-4/12 md:w-3/12" alt="">
+                        <h4  class="font-bold md:text-1xl">Instances</h4>
+                        <p  class="">Instance status and 
+                            dependencies in one 
+                            aggregated view.</p>
+                            
+                    </div>
+                    <div class="md:col-start-3 flex flex-col border-2 border-zinc-700 rounded-lg bg-neutral-800 p-5 gap-5" data-aos="zoom-in-up">
+                       <img src="img/hero-20-13.svg" class="bg-zinc-700 p-2 rounded-lg w-4/12 md:w-3/12" alt="">
+                        <h4  class="font-bold md:text-1xl">Logging</h4>
+                        <p  class="">Stream combined Capsule logs 
+                            across instances, directly from 
+                            the dashboard.</p>
+                    </div>
+                    <div class="md:col-start-4 flex flex-col border-2 border-zinc-700 rounded-lg bg-neutral-800 p-5 gap-5" data-aos="zoom-in-up">
+                        <img src="img/hero-20-14.svg" class="bg-zinc-700 p-2 rounded-lg w-4/12 md:w-3/12" alt="">
+                         <h4  class="font-bold md:text-1xl">Health Checks</h4>
+                         <p  class="">Easily configure Liveness and 
+                            Ready probes for Capsules.</p>
+                     </div>
+                </div>
+            </section>
+            <section class="py-10">
+                <div class="hero-1 py-10 flex flex-col gap-2 mx-5 md:mx-10 ">
+                    <h4 class="text-3xl md:text-5xl text-center font-light" data-aos="zoom-in-up">A platform to benefit the entire team
+                    </h4>
+                    </div>
+                </div>
+    
+                <div class="grid grid-col-1 ms:grid-cols-3 md:grid-rows-1 mx-5 md:mx-10 gap-4">
+                    <div class="md:col-start-1 flex flex-col hover:shadow-lg  bg-white rounded-lg  p-5 gap-5" data-aos="zoom-in-up">
+                        <i class="fa fa-check text-1xl p-2 bg-green-200 rounded-lg w-1/12" aria-hidden="true"></i>
+                        <h4  class="font-bold md:text-1xl">Straight from code to production</h4>
+                        <p  class="text-slate-500" data-aos="zoom-in-right">Let developers independently deploy to K8 
+                            without any bottlenecks, steep K8 learning 
+                            curves or unnecessary deployment stages.</p>
+                            
+                    </div>
+                    <div class="md:col-start-2 flex flex-col hover:shadow-lg  bg-white rounded-lg  p-5 gap-5" data-aos="zoom-in-up">
+                        <i class="fa fa-check text-1xl p-2 bg-green-200 rounded-lg w-1/12" aria-hidden="true"></i>
+                        <h4  class="font-bold md:text-1xl">Troubleshoot blazingly fast</h4>
+                        <p  class="text-slate-500" data-aos="zoom-in-right">Identify issues, misconfigurations, lack of 
+                            resources, and failed deploys, and resolve 
+                            with rollbacks.</p>
+                            
+                    </div>
+                    <div class="md:col-start-3 flex flex-col hover:shadow-lg  bg-white rounded-lg  p-5 gap-5" data-aos="zoom-in-up">
+                        <i class="fa fa-check text-1xl p-2 bg-green-200 rounded-lg w-1/12" aria-hidden="true"></i>
+                        <h4  class="font-bold md:text-1xl">Unmatched Developer Experience</h4>
+                        <p  class="text-slate-500" data-aos="zoom-in-right">Provide developers with a powerful platform 
+                            that fits their workflows with a robust CLI 
+                            and Dashboard.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="py-10">
+                <div class="hero-1 py-10 flex flex-col gap-2 mx-5 md:mx-10 ">
+                    <h4 class="text-3xl md:text-5xl  font-light" data-aos="zoom-in-up">Ready to take Rig for a spin?
+                    </h4>
+                    </div>
+                </div>
+    
+                <div class="grid grid-col-1 ms:grid-cols-2 md:grid-rows-1 mx-5 rounded-lg border-2 md:mx-10 ">
+                    <div class="md:col-start-1 flex flex-col hover:shadow-lg  bg-white  p-10 gap-5" data-aos="zoom-in-up">
+                        <h4  class="font-light md:text-2xl">Schedule a call</h4>
+                        <p  class="text-slate-500" data-aos="zoom-in-right">We are gladly helping companies to get started.</p>
+                        <a class=" rounded-lg py-3 md:w-4/12 text-center border-black border-2  hover:border-black hover:border-2 cursor-pointer hover:bg-white hover:text-black hover:bg-zinic-600 bg-black text-white "
+                        href="">Schedule a call </a>
+                    </div>
+                    <div class="md:col-start-2 flex flex-col hover:shadow-lg  bg-white  p-10 gap-5" data-aos="zoom-in-up">
+                        <h4  class="font-light md:text-2xl">Try it out yourself</h4>
+                        <p  class="text-slate-500" data-aos="zoom-in-right">We have made it as easy as possible to try Rig.</p>
+                        <a class=" rounded-lg py-3 md:w-4/12 text-center border-black border-2  hover:border-black hover:border-2 cursor-pointer hover:bg-white hover:text-black hover:bg-zinic-600 bg-black text-white "
+                        href="">Documentation <i class="fa fa-arrow-right" aria-hidden="true"></i></a> 
+                    </div>
+                </div>
+            </section>
+        </section>
+       
+    </main>
+    <footer class="px-5 md:px-10 flex flex-col text-white gap-20 bg-stone-900 py-10 md:p-10">
+        <div class="flex flex-col md:flex-row md:mx-20 border-2  bg-neutral-800 items-center rounded-lg md:w-12/12">
+            <div class="md:w-6/12 w-10/12 flex flex-col p-2 md:p-5 gap-5" data-aos="zoom-in-up">
+                <h4  class="font-light text-center md:text-4xl">Join our Community</h4>
+                <div class="flex flex-col md:flex-row gap-5" data-aos="zoom-in-up">
+                    <a class=" rounded-lg py-3 md:w-4/12 text-center border-black border-2  hover:border-black hover:border-2 cursor-pointer hover:bg-black hover:text-white  bg-white text-black "
+                    href=""><i class="fa fa-slack" aria-hidden="true"></i> Join our Slack</a> 
+                    <a class=" rounded-lg py-3 md:w-4/12 text-center border-black border-2  hover:border-black hover:border-2 cursor-pointer hover:bg-white hover:text-black hover:bg-zinic-600 bg-black text-white "
+                    href=""><i class="fa fa-github" aria-hidden="true"></i> Star us on Github</a> 
+                </div>
+            </div>
+            <img src="img/footer-20.svg" class="md:w-6/12" alt="">
+        </div>
+        <div class="flex flex-col md:flex-row justify-between ">
+            <div class="flex flex-col md:flex-row py-5 gap-5 sm:w-3/12 md:gap-10">
+                <div class="flex flex-col gap-5" data-aos="zoom-in-up">
+                    <div class="flex flex-row  gap-5 ">
+                        <img class="fill-white" src="img/logo-20-1.svg" alt="">
+                    </div>
+                    <div class="flex flex-col gap-5 text-1xl">
+                        <ul class="flex flex-row justify-around gap-2 md:gap-10">
+                            <li><i class="text-1xl cursor-pointer fa bg-neutral-800 p-2 border-2 rounded-lg fa-github" aria-hidden="true"></i></li>
+                            <li><i class="text-1xl cursor-pointer fa bg-neutral-800 p-2 border-2 rounded-lg fa-twitter" aria-hidden="true"></i></li>
+                            <li><i class="text-1xl cursor-pointer fa bg-neutral-800 p-2 border-2 rounded-lg fa-linkedin" aria-hidden="true"></i></li>
+                            <li><i class="text-1xl cursor-pointer fa bg-neutral-800 p-2 border-2 rounded-lg fa-slack" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex md:flex-row md:mx-20 border-2 sm:w-6/12  bg-neutral-800 items-center rounded-lg w-12/12">
+                <div class=" flex flex-col p-5 gap-5" data-aos="zoom-in-up">
+                    <h4  class="font-light md:text-1xl">Sign up for our newsletter and join the growing Rig.dev community.</h4>
+                    <div class="flex flex-col md:flex-row gap-5" data-aos="zoom-in-up">
+                        <input type="email" name="" placeholder="Email" class="bg-neutral-900 p-2 rounded-lg border-2 border-zinc-400" id="">
+                        <input type="email" name="" placeholder="Email" class="bg-neutral-900 p-2 rounded-lg border-2 border-zinc-400" id="">
+                        <a class=" rounded-lg p-3 md:w-4/12 text-center border-black border-2  hover:border-black hover:border-2 cursor-pointer hover:bg-black hover:text-white  bg-white text-black "
+                        href=""><i class="fa fa-slack" aria-hidden="true"></i> Subscribe</a> 
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row border-t-2 py-5 gap-10">
+            <h4>© 2023 Rig.Dev ApS</h4>
+            <h4>Terms of Service</h4>
+            <h4>Privacy & Cookies policy</h4>
+
+        </div>
+
+        <!-- <div class="flex flex-col items-center gap-5 text-center text-1xl">
+            <h4>Follow us on </h4>
+            <ul class="flex justify-around gap-5" data-aos="zoom-in-up">
+                <li><i class="text-3xl fa fa-instagram" aria-hidden="true"></i></li>
+                <li><i class="text-3xl fa fa-twitter" aria-hidden="true"></i></li>
+                <li><i class="text-3xl fa fa-linkedin" aria-hidden="true"></i></li>
+            </ul>
+        </div> -->
+    </footer>
+</body>
+
+<script>
+    //to start using the libary
+    AOS.init(
+    );
+    // Grab HTML Elements
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    // Add Event Listeners
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+    var splide = new Splide('.splide', {
+        type: 'loop',
+        perPage: 2,
+        drag: 'free',
+        focus: 'center',
+        breakpoints: {
+            640: {
+                perPage: 1,
+                gap: '.7rem',
+                height: '100%',
+            },
+            480: {
+                perPage: 1,
+                gap: '1rem',
+                height: '100%',
+            },
+        },
+    });
+    splide.mount();
+</script>
+
+</html>

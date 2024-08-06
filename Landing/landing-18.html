@@ -1,0 +1,467 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/143f4c7aad.js" crossorigin="anonymous"></script>
+
+    <!-- swiper js libary -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- animate on scroll libary -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body class=" text-black bg-white">
+    <header
+        class=" sm:px-20 fixed   bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 w-12/12 inset-x-0 top-0 z-10 ">
+
+        <nav class="flex items-center justify-between p-4" aria-label="Global">
+
+            <div class="mx flex flex-row sm:w-2/12  items-center sm:gap-5">
+                <img src="img/logo-18.svg" class="w-8/12 sm:w-8/12" alt="">
+            </div>
+            <ul class="hidden flex flex-row  items-center sm:flex gap-12">
+                <li><a class="relative text-md focus:text-green-600  w-fit block hover:text-green-600 after:block after:content-[''] after:absolute after:h-[2px] after:bg-green-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Home</a></li>
+                <li><a class="relative text-md  w-fit block hover:text-green-600 after:block after:content-[''] after:absolute after:h-[2px] after:bg-green-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Service</a></li>
+                <li><a class="relative text-md  w-fit block hover:text-green-600 after:block after:content-[''] after:absolute after:h-[2px] after:bg-green-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Feature</a></li>
+                <li><a class="relative text-md  w-fit block hover:text-green-600 after:block after:content-[''] after:absolute after:h-[2px] after:bg-green-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Product</a></li>
+                <li><a class="relative text-md  w-fit block hover:text-green-600 after:block after:content-[''] after:absolute after:h-[2px] after:bg-green-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">Testimonial</a></li>
+                <li><a class="relative text-md  w-fit block hover:text-green-600 after:block after:content-[''] after:absolute after:h-[2px] after:bg-green-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                        href="">FAQ</a></li>
+
+            </ul>
+            <div class="nav-3 hidden sm:block">
+                <ul class="flex flex-row gap-5">
+                    <a class=" rounded-md p-2 border-green-600 border-2 cursor-pointer hover:bg-green-600 hover:text-white hover:bg-zinic-600 bg-none text-green-600 "
+                        href="">Login</a>
+                    <a class=" rounded-md p-2 border-green-600 border-2 cursor-pointer hover:bg-white hover:text-green-600 hover:bg-zinic-600 bg-green-600 text-white "
+                        href="">Sign up</a>
+                </ul>
+            </div>
+            <!-- mobile section -->
+            <button
+                class="px-3 outline-none mobile-menu-button cursor-pointer rounded-md p-2 border sm:hidden flex border-black  hover:bg-none hover:text-black">
+                <i class="fa-solid fa-bars"></i></button>
+        </nav>
+        <div class="hidden mobile-menu">
+            <ul class="mx-auto gap-20">
+                <li class=" py-3 px-5   transition duration-300"><a href="index.html">Home</a></li>
+                <li class=" py-3 px-5   transition duration-300"><a href="about.html">About</a></li>
+                <li class=" py-3 px-5   transition duration-300"><a href="">Services</a></li>
+                <li class=" py-3 px-5   transition duration-300"><a href="">product tour</a></li>
+                <li class=" py-3 px-5   transition duration-300"><a href="">blog</a></li>
+            </ul>
+        </div>
+        <div>
+
+        </div>
+    </header>
+
+    <main class=" pt-24 bg-[url('img/bg-15.svg')]  sm:pt-32 gap-10 items-center  ">
+        <section class="hero flex flex-col  sm:flex-row gap-20 items-center py-20 sm:justify-between ">
+
+            <div class="hero-1 flex flex-col gap-2 mx-5 sm:mx-10 sm:w-10/12">
+                <h4 class="text-3xl sm:text-7xl text-zinc-900 font-light" data-aos="zoom-in-up">Lessons and insights
+                </h4>
+                <h4 class="text-3xl sm:text-6xl text-green-600 font-light" data-aos="zoom-in-up"> from 8 years</h4>
+
+                <div class="py-5 flex flex-col  gap-10" data-aos="fade-right">
+                    <p class="text-md text-slate-500 sm:w-10/12">Where to grow your business as a photographer: site or
+                        social media?
+                    </p>
+                    <a class=" rounded-sm py-3 w-3/12 text-center border-green-600 border-2  hover:border-green-600 hover:border-2 cursor-pointer hover:bg-white hover:text-green-600 hover:bg-zinic-600 bg-green-600 text-white "
+                        href="">Register</a>
+                </div>
+            </div>
+            <div class="hero-2  sm:w-7/12" data-aos="zoom-in-left" data-aos="fade-right">
+                <img src="img/hero-18.svg" alt="" class="sm:w-12/12 ">
+            </div>
+        </section>
+        <section class="py-16 bg-white">
+            <div class="container m-auto px-6 space-y-8 md:px-12 lg:px-20">
+                <div class="m-auto text-center items-center lg:w-10/12">
+                    <h4 class="text-3xl sm:text-3xl text-zinc-900 font-bold" data-aos="zoom-in-up">Our Clients
+                    </h4>
+                    <p class="text-md text-slate-500 " data-aos="fade-up">We have been working with some Fortune 500+
+                        clients
+                    </p>
+                </div>
+                <div class="grid grid-cols-3 sm:grid-cols-7 justify-center md:grid-cols-7 gap-20" data-aos="fade-right">
+                    <img src="img/hero-18-1.svg" alt="" class="sm:w-12/12 ">
+                    <img src="img/hero-18-2.svg" alt="" class="sm:w-12/12 ">
+                    <img src="img/hero-18-3.svg" alt="" class="sm:w-12/12 ">
+                    <img src="img/hero-18-4.svg" alt="" class="sm:w-12/12 ">
+                    <img src="img/hero-18-5.svg" alt="" class="sm:w-12/12 ">
+                    <img src="img/hero-18-6.svg" alt="" class="sm:w-12/12 ">
+                    <img src="img/hero-18-7.svg" alt="" class="sm:w-12/12 ">
+                </div>
+            </div>
+        </section>
+        <section class="py-16 bg-white">
+            <div class="container m-auto px-6 space-y-8 md:px-12 lg:px-20">
+                <div class="m-auto text-center flex flex-col gap-2 items-center items-center lg:w-10/12">
+                    <h4 class="text-2xl sm:w-6/12 text-zinc-900 font-bold" data-aos="zoom-in-up">Manage your
+                        entire community in a single system
+                    </h4>
+                    <p class="text-md text-slate-500 ">Who is Nextcent suitable for?
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 justify-center md:grid-cols-3 gap-20">
+                    <div class=" flex flex-col p-3 items-center text-center gap-3 shadow-lg cursor-pointer rounded-lg"
+                        data-aos="fade-right">
+                        <img src="img/hero-18-8.svg" alt="" class="sm:w-12/12 ">
+                        <h4 class="text-lg">Membership Organisations</h4>
+                        <p class="text-md text-slate-500 ">Our membership management software provides full automation
+                            of membership renewals and payments
+                        </p>
+                    </div>
+                    <div class=" flex flex-col p-3 items-center text-center gap-3 shadow-lg cursor-pointer rounded-lg"
+                        data-aos="fade-right">
+                        <img src="img/hero-18-9.svg" alt="" class="sm:w-12/12 ">
+                        <h4 class="text-lg">Membership Organisations</h4>
+                        <p class="text-md text-slate-500 ">Our membership management software provides full automation
+                            of membership renewals and payments
+                        </p>
+                    </div>
+                    <div class=" flex flex-col p-3 items-center text-center gap-3 shadow-lg cursor-pointer rounded-lg"
+                        data-aos="fade-right">
+                        <img src="img/hero-18-10.svg" alt="" class="sm:w-12/12 ">
+                        <h4 class="text-lg">Membership Organisations</h4>
+                        <p class="text-md text-slate-500 ">Our membership management software provides full automation
+                            of membership renewals and payments
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="hero flex flex-col mx-5 sm:mx-10  sm:flex-row gap-5 sm:gap-20 items-center  sm:justify-between ">
+            <div class="hero-2  sm:w-7/12" data-aos="zoom-in-left" data-aos="fade-right">
+                <img src="img/hero-18-11.svg" alt="" class="sm:w-12/12 ">
+            </div>
+            <div class="hero-1 flex flex-col gap-2 mx-5 sm:mx-10 sm:w-10/12">
+                <h4 class="text-2xl sm:text-4xl text-zinc-900 font-bold" data-aos="zoom-in-up">The unseen of spending
+                    three years at Pixelgrade
+                </h4>
+                <div class="py-5 flex flex-col  gap-10" data-aos="fade-right">
+                    <p class="text-sm text-justify text-slate-500 sm:w-10/12">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque
+                        placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet
+                        risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum
+                        pulvinar odio.
+                    </p>
+                    <a class=" rounded-sm py-3 sm:w-3/12 text-center border-green-600 border-2  hover:border-green-600 hover:border-2 cursor-pointer hover:bg-white hover:text-green-600 hover:bg-zinic-600 bg-green-600 text-white "
+                        href="">Learn More</a>
+                </div>
+            </div>
+
+        </section>
+        <section
+            class="hero flex flex-col px-10 py-10 bg-slate-100 sm:flex-row gap-20 items-center  sm:justify-between ">
+
+            <div class="hero-1 flex flex-col gap-2 mx-5 sm:mx-10 sm:w-4/12">
+                <h4 class="text-3xl sm:text-3xl text-zinc-900 font-bold" data-aos="zoom-in-up">Helping a local
+                </h4>
+                <h4 class="text-3xl sm:text-3xl text-green-600 font-bold" data-aos="zoom-in-up">business reinvent itself
+                </h4>
+                <p class="text-md text-slate-500 ">We reached here with our hard work and dedication
+                </p>
+            </div>
+            <div class="hero-2  sm:w-7/12" data-aos="zoom-in-left" data-aos="fade-right">
+                <div class="container m-auto px-6 space-y-8 md:px-12 lg:px-20">
+                    <div class="grid grid-cols-2 sm:grid-cols-2 justify-center md:grid-cols-2 gap-20"
+                        data-aos="fade-right">
+                        <div class=" flex flex-row items-center gap-5">
+                            <img src="img/hero-18-13.svg" alt="" class="sm:w-12/12 ">
+                            <div class="flex flex-col">
+                                <h4 class="text-md sm:text-md text-green-600 font-bold" data-aos="zoom-in-up">2,245,341
+                                </h4>
+                                <p class="text-sm text-slate-500">Members
+                                </p>
+                            </div>
+                        </div>
+                        <div class=" flex flex-row items-center gap-5">
+                            <i class="fa fa-recycle text-green-600 text-5xl" aria-hidden="true"></i>
+                            <div class="flex flex-col">
+                                <h4 class="text-md sm:text-md text-green-600 font-bold" data-aos="zoom-in-up">46,328
+                                </h4>
+                                <p class="text-sm text-slate-500">Clubs</p>
+                            </div>
+                        </div>
+                        <div class=" flex flex-row items-center gap-5">
+                            <img src="img/hero-18-15.svg" alt="" class="sm:w-12/12 ">
+                            <div class="flex flex-col">
+                                <h4 class="text-md sm:text-md text-green-600 font-bold" data-aos="zoom-in-up">828,867
+                                </h4>
+                                <p class="text-sm text-slate-500 ">Event Bookings
+                                </p>
+                            </div>
+                        </div>
+                        <div class=" flex flex-row items-center gap-5">
+                            <img src="img/hero-18-16.svg" alt="" class="sm:w-12/12 ">
+                            <div class="flex flex-col">
+                                <h4 class="text-md sm:text-md text-green-600 font-bold" data-aos="zoom-in-up">1,926,436
+                                </h4>
+                                <p class="text-sm text-slate-500">Payments
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero flex flex-col mx-5 sm:mx-10 py-10  sm:flex-row gap-5 sm:gap-20 items-center  sm:justify-between ">
+            <div class="hero-2  sm:w-7/12" data-aos="zoom-in-left" data-aos="fade-right">
+                <img src="img/hero-18-12.svg" alt="" class="sm:w-12/12 ">
+            </div>
+            <div class="hero-1 flex flex-col gap-2 mx-5 sm:mx-10 sm:w-10/12">
+                <h4 class="text-2xl text-center sm:text-4xl text-zinc-900 font-bold" data-aos="zoom-in-up">How to design your site
+                    footer like we did
+                </h4>
+                <div class="py-5 flex flex-col  gap-10" data-aos="fade-right">
+                    <p class="text-sm text-justify text-slate-500 sm:w-10/12">Donec a eros justo. Fusce egestas tristique ultrices.
+                        Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a
+                        magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus
+                        vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non
+                        aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa.
+                        Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus
+                        ipsum id gravida.
+                    </p>
+                    <a class=" rounded-sm py-3 sm:w-3/12 text-center border-green-600 border-2  hover:border-green-600 hover:border-2 cursor-pointer hover:bg-white hover:text-green-600 hover:bg-zinic-600 bg-green-600 text-white "
+                        href="">Learn More</a>
+                </div>
+            </div>
+
+        </section>
+        <section
+            class="hero flex flex-col px-5 sm:px-10 py-10 bg-slate-100  sm:flex-row gap-20 items-center  sm:justify-between ">
+            <div class="hero-2  sm:w-7/12" data-aos="zoom-in-left" data-aos="fade-right">
+                <img src="img/hero-18-17.svg" alt="" class="sm:w-12/12 ">
+            </div>
+            <div class="hero-1 flex flex-col gap-2 mx-5 sm:mx-10 sm:w-10/12">
+                <p class="text-sm text-justify text-slate-500 sm:w-10/12">Maecenas dignissim justo eget nulla rutrum molestie.
+                    Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus
+                    sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit.
+                    Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed
+                    augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum
+                    pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget.
+                    Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem
+                    dignissim finibus ac sit amet magna.
+                </p>
+                <div class="py-5 flex flex-col  gap-2" data-aos="fade-right">
+
+                    <h4 class="text-md sm:text-md text-green-600 font-bold" data-aos="zoom-in-up">Tim Smith
+                    </h4>
+                    <p class="text-sm text-slate-500 sm:w-10/12">British Dragon Boat Racing Association</p>
+                    <div class="flex flex-row">
+                        <div class="container m-auto px-2 space-y-8 md:px-2 lg:px-2">
+                            <div class="grid grid-cols-3 sm:grid-cols-4 justify-center md:grid-cols-6 "
+                                data-aos="fade-right">
+                                <img src="img/hero-18-1.svg" alt="" class="sm:w-12/12 ">
+                                <img src="img/hero-18-2.svg" alt="" class="sm:w-12/12 ">
+                                <img src="img/hero-18-3.svg" alt="" class="sm:w-12/12 ">
+                                <img src="img/hero-18-4.svg" alt="" class="sm:w-12/12 ">
+                                <img src="img/hero-18-5.svg" alt="" class="sm:w-12/12 ">
+                                <img src="img/hero-18-6.svg" alt="" class="sm:w-12/12 ">
+                            </div>
+                        </div>
+                        <a class=" rounded-sm py-3 w-3/12 text-center   text-green-600 " href="">Learn More <i
+                                class="fa fa-arrow-right" aria-hidden="true" data-aos="fade-right"></i></i></a>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <section class="py-16 bg-white">
+            <div class="container m-auto px-6 space-y-8 md:px-12 lg:px-20">
+                <div class="m-auto text-center flex flex-col gap-2 items-center items-center lg:w-10/12">
+                    <h4 class="text-3xl sm:text-3xl sm:w-6/12 text-zinc-900 font-bold" data-aos="zoom-in-up">Caring is
+                        the new marketing
+                    </h4>
+                    <p class="text-md text-slate-500 sm:w-10/12">The Nexcent blog is the best place to read about the
+                        latest membership insights, trends and more. See who's joining the community, read about how our
+                        community are increasing their membership income and lot's more.​
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 justify-center md:grid-cols-3 gap-20">
+
+                    <div class="flex flex-col items-center static " data-aos="fade-right">
+
+                        
+                        <div
+                            class="flex flex-col p-3 items-center text-center gap-3 shadow-lg cursor-pointer rounded-lg bg-white  bottom-0  w-10/12">
+                            <p class="text-md text-slate-500 ">Creating Streamlined Safeguarding Processes with OneRen
+                            </p>
+                            <a class=" rounded-sm py-3 sm:w-6/12 text-center   text-green-600 " href="">Readmore <i
+                                    class="fa fa-arrow-right" aria-hidden="true" data-aos="fade-right"></i></i></a>
+
+                        </div>
+
+                    </div>
+                    <div class="flex flex-col items-center static " data-aos="fade-right">
+
+                        
+                        <div
+                            class="flex flex-col p-3 items-center text-center gap-3 shadow-lg cursor-pointer rounded-lg bg-white  bottom-0  w-10/12">
+                            <p class="text-md text-slate-500 ">What are your safeguarding responsibilities and how can
+                                you manage them?
+                            </p>
+                            <a class=" rounded-sm py-3 sm:w-6/12 text-center   text-green-600 " href="">Readmore <i
+                                    class="fa fa-arrow-right" aria-hidden="true" data-aos="fade-right"></i></i></a>
+
+                        </div>
+
+                    </div>
+                    <div class="flex flex-col items-center static " data-aos="fade-right">
+
+                        
+                        <div
+                            class="flex flex-col p-3 items-center text-center gap-3 shadow-lg cursor-pointer rounded-lg bg-white  bottom-0  w-10/12">
+                            <p class="text-md text-slate-500 ">Revamping the Membership Model with Triathlon Australia
+                            </p>
+                            <a class=" rounded-sm py-3 sm:w-6/12 text-center   text-green-600 " href="">Readmore <i
+                                    class="fa fa-arrow-right" aria-hidden="true" data-aos="fade-right"></i></i></a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class=" my-5 sm:py-10">
+            <div class="m-auto text-center flex flex-col gap-2 items-center items-center lg:w-10/12">
+                <h4 class="text-3xl sm:text-3xl sm:w-6/12 text-zinc-900 font-bold" data-aos="zoom-in-up">Thinking of
+                    testing our product?
+                </h4>
+                <a class=" rounded-sm py-3 px-3 sm:w-3/12 text-center border-green-600 border-2  hover:border-green-600 hover:border-2 cursor-pointer hover:bg-white hover:text-green-600 hover:bg-zinic-600 bg-green-600 text-white "
+                    href="">Get a Demo <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+        </section>
+    </main>
+    <footer class=" px-10 flex flex-col text-white gap-20 bg-slate-800 py-10 sm:p-20">
+        
+        <div class="flex gap-1 sm:gap-60">
+            <div class="flex flex-col  gap-5  sm:gap-10">
+                <div class="flex flex-row items-center gap-5 ">
+                    <img class="fill-white" src="img/logo-18-1.svg" alt="">
+                </div>
+                <div>
+                    <h4>Copyright © 2020 Nexcent ltd.</h4>
+                    <h4>All rights reserved</h4>
+                    
+                </div>
+                
+                <div class="flex flex-col gap-5 text-1xl">
+                    <ul class="flex flex-row justify-around gap-2 sm:gap-10">
+                        <li><i class="text-3xl fa fa-instagram" aria-hidden="true"></i></li>
+                        <li><i class="text-3xl fa fa-twitter" aria-hidden="true"></i></li>
+                        <li><i class="text-3xl fa fa-linkedin" aria-hidden="true"></i></li>
+                        <li><i class="text-3xl fa fa-youtube" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+                <div class=" sm:hidden">
+                    <h4 class="font-md text-center">Company</h4>
+                    <ul class="flex  flex-row text-center items-center justify-center gap-2 sm:gap-5">
+                            <li>About</li>
+                            <li> Blog</li>
+                            <li>Contact</li>
+                            <li>Pricing</li>
+                            <li>Testimonials</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hidden grid-cols-3 gap-3 sm:grid sm:gap-36">
+                <ul class="flex flex-col gap-2 text-left">
+                    <h4 class="text-2xl font-bold py-5">Company</h4>
+                    <li>About us</li>
+                    <li> Blog</li>
+                    <li>Contact us</li>
+                    <li>Pricing</li>
+                    <li>Testimonials</li>
+                </ul>
+                <ul class="flex flex-col gap-2 text-left">
+                    <h4 class="text-2xl font-bold py-5">Support</h4>
+                    <li>Help center</li>
+                    <li> Terms of service</li>
+                    <li>Legal</li>
+                    <li> Privacy policy</li>
+                    <li>Status</li>
+                </ul>
+                <ul class="flex flex-col gap-4 text-left">
+                    <h4 class="text-2xl font-bold py-5">Stay up to date</h4>
+                    <div class="static">
+                        <input type="email" placeholder="Your email address" class=" rounded-md p-2 bg-slate-200  cursor-pointer  "
+                        href="">
+                    </div>
+                   
+                </ul>
+            </div>
+        </div>
+        
+        <!-- <div class="flex flex-col items-center gap-5 text-center text-1xl">
+            <h4>Follow us on </h4>
+            <ul class="flex justify-around gap-5">
+                <li><i class="text-3xl fa fa-instagram" aria-hidden="true"></i></li>
+                <li><i class="text-3xl fa fa-twitter" aria-hidden="true"></i></li>
+                <li><i class="text-3xl fa fa-linkedin" aria-hidden="true"></i></li>
+            </ul>
+        </div> -->
+    </footer>
+</body>
+
+<script>
+    //to start using the libary
+    AOS.init(
+    );
+    // Grab HTML Elements
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    // Add Event Listeners
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+    var splide = new Splide('.splide', {
+        type: 'loop',
+        perPage: 2,
+        drag: 'free',
+        focus: 'center',
+        breakpoints: {
+            640: {
+                perPage: 1,
+                gap: '.7rem',
+                height: '100%',
+            },
+            480: {
+                perPage: 1,
+                gap: '1rem',
+                height: '100%',
+            },
+        },
+    });
+    splide.mount();
+</script>
+
+</html>
