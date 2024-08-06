@@ -1,5 +1,3 @@
-Here is a fully descriptive README file for your landing pages project:
-
 # Landing Pages
 
 ## Overview
